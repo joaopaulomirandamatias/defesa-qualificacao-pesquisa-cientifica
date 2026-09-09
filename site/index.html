@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MirandasTech · Defesa e qualificação: como se preparar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+
+:root{
+  --paper:#F1F4F7; --surface:#FFFFFF; --surface-2:#F8FAFB;
+  --ink:#101720; --ink-2:#4A5866; --ink-3:#75828E;
+  --rule:#D3DAE1; --rule-2:#E5EAEF;
+  --blueprint:#17436B; --blueprint-2:#2C6396; --blueprint-soft:#E4EDF5;
+  --signal:#C4530E; --signal-soft:#FBEADD;
+  --go:#186B50; --go-soft:#E0EFE9;
+  --stop:#A0231C; --stop-soft:#F9E5E3;
+  --amber:#8A6000; --amber-soft:#F9EFD6;
+  --shadow:0 1px 2px rgba(16,23,32,.06),0 8px 24px -12px rgba(16,23,32,.18);
+  --serif:'Spectral',Georgia,'Times New Roman',serif;
+  --cond:'IBM Plex Sans Condensed','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1218; --surface:#131B23; --surface-2:#182129;
+    --ink:#E3E9EF; --ink-2:#94A3B1; --ink-3:#71808E;
+    --rule:#26313C; --rule-2:#1E2831;
+    --blueprint:#7DB2DF; --blueprint-2:#A3CAEB; --blueprint-soft:#15283A;
+    --signal:#EE8A46; --signal-soft:#33200F;
+    --go:#54C398; --go-soft:#0F2620;
+    --stop:#EC7B72; --stop-soft:#2D1614;
+    --amber:#DCAC3D; --amber-soft:#2A2110;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1218; --surface:#131B23; --surface-2:#182129;
+  --ink:#E3E9EF; --ink-2:#94A3B1; --ink-3:#71808E;
+  --rule:#26313C; --rule-2:#1E2831;
+  --blueprint:#7DB2DF; --blueprint-2:#A3CAEB; --blueprint-soft:#15283A;
+  --signal:#EE8A46; --signal-soft:#33200F;
+  --go:#54C398; --go-soft:#0F2620;
+  --stop:#EC7B72; --stop-soft:#2D1614;
+  --amber:#DCAC3D; --amber-soft:#2A2110;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+:focus-visible{outline:2px solid var(--blueprint-2);outline-offset:3px;border-radius:2px}
+
+/* ---------- sections ---------- */
+.part{padding-top:56px}
+.part-head{display:flex;align-items:baseline;gap:14px;border-top:1px solid var(--rule);padding-top:14px;margin-bottom:8px}
+.part-num{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--signal);font-weight:600}
+.part-label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+h2{font-family:var(--cond);font-weight:700;font-size:clamp(27px,3.6vw,38px);line-height:1.12;letter-spacing:-.012em;margin:6px 0 0;text-wrap:balance;max-width:22ch}
+h3{font-family:var(--cond);font-weight:600;font-size:22px;line-height:1.25;margin:40px 0 0;color:var(--ink);text-wrap:balance}
+h4{font-family:var(--cond);font-weight:600;font-size:17px;line-height:1.3;margin:26px 0 0;color:var(--blueprint);letter-spacing:.01em}
+p,ul,ol{max-width:68ch}
+p{margin:14px 0 0}
+ul,ol{margin:14px 0 0;padding-left:22px}
+li{margin:7px 0}
+li::marker{color:var(--blueprint)}
+strong{font-weight:600;color:var(--ink)}
+em{font-style:italic}
+a{color:var(--blueprint);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+code{font-family:var(--mono);font-size:.855em;background:var(--surface-2);border:1px solid var(--rule-2);padding:1px 5px;border-radius:3px;color:var(--ink)}
+.dek{font-size:18px;color:var(--ink-2);max-width:64ch;margin:16px 0 0;line-height:1.6}
+
+/* ---------- blocks ---------- */
+.rule-box,.trap,.case,.note{margin:24px 0 0;padding:16px 20px;border-radius:4px;max-width:74ch;border-left:3px solid}
+.rule-box{background:var(--blueprint-soft);border-left-color:var(--blueprint)}
+.trap{background:var(--signal-soft);border-left-color:var(--signal)}
+.case{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--go)}
+.note{background:var(--surface-2);border-left-color:var(--ink-3)}
+.blabel{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;display:block;margin-bottom:7px}
+.rule-box .blabel{color:var(--blueprint)}
+.trap .blabel{color:var(--signal)}
+.case .blabel{color:var(--go)}
+.note .blabel{color:var(--ink-3)}
+.rule-box p:first-of-type,.trap p:first-of-type,.case p:first-of-type,.note p:first-of-type{margin-top:0}
+.rule-box p,.trap p,.case p,.rule-box li,.trap li,.case li,.note p,.note li{max-width:none;font-size:16px}
+.case .src{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:10px;display:block;line-height:1.5}
+
+/* ---------- figures ---------- */
+figure{margin:34px 0 0;max-width:none}
+figcaption{font-family:var(--cond);font-size:13.5px;color:var(--ink-2);margin-top:11px;line-height:1.5;max-width:76ch}
+figcaption b{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--signal);font-weight:600;margin-right:7px}
+.frame{border:1px solid var(--rule);background:var(--surface);border-radius:4px;padding:24px;overflow-x:auto}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;margin:26px 0 0;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-family:var(--cond);font-size:14.5px;min-width:520px}
+th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding:11px 14px;border-bottom:1px solid var(--rule);background:var(--surface-2);vertical-align:bottom}
+td{padding:11px 14px;border-bottom:1px solid var(--rule-2);vertical-align:top;line-height:1.45;color:var(--ink)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}
+td.mono{font-family:var(--mono);font-size:12.5px}
+.pill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;font-weight:600;text-transform:uppercase;padding:2.5px 8px;border-radius:20px;white-space:nowrap}
+.p-go{background:var(--go-soft);color:var(--go)}
+.p-amber{background:var(--amber-soft);color:var(--amber)}
+.p-stop{background:var(--stop-soft);color:var(--stop)}
+.p-blue{background:var(--blueprint-soft);color:var(--blueprint)}
+
+/* ---------- terminal ---------- */
+.term{background:#0B1219;border:1px solid #223040;border-radius:5px;overflow:hidden;margin:26px 0 0}
+.term-bar{display:flex;align-items:center;gap:7px;padding:8px 13px;background:#141F2B;border-bottom:1px solid #223040}
+.term-dot{width:9px;height:9px;border-radius:50%;background:#33445A}
+.term-title{font-family:var(--mono);font-size:10.5px;color:#7A8B9C;margin-left:8px;letter-spacing:.05em}
+.term pre{margin:0;padding:15px 16px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.62;color:#C9D6E2}
+.term .c-p{color:#5FA8DC}
+.term .c-o{color:#E8A055}
+.term .c-g{color:#5FC79A}
+.term .c-m{color:#71828F}
+.term .c-r{color:#E8776C}
+
+/* ---------- code ---------- */
+.code{background:var(--surface-2);border:1px solid var(--rule);border-radius:4px;margin:24px 0 0;overflow:hidden}
+.code-head{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);padding:8px 14px;border-bottom:1px solid var(--rule);background:var(--surface)}
+.code pre{margin:0;padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.66;color:var(--ink)}
+.code .k{color:var(--blueprint);font-weight:500}
+.code .s{color:var(--go)}
+.code .cm{color:var(--ink-3);font-style:italic}
+
+/* ---------- charts ---------- */
+.bars{display:flex;flex-direction:column;gap:11px;margin:0}
+.bar-row{display:grid;grid-template-columns:minmax(96px,152px) minmax(0,1fr) 62px;gap:12px;align-items:center}
+.bar-lab{font-family:var(--cond);font-size:13.5px;color:var(--ink-2);line-height:1.25;text-align:right}
+.bar-track{background:var(--rule-2);border-radius:2px;height:22px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;background:var(--blueprint)}
+.bar-fill.f-signal{background:var(--signal)}
+.bar-fill.f-go{background:var(--go)}
+.bar-fill.f-stop{background:var(--stop)}
+.bar-fill.f-amber{background:var(--amber)}
+.bar-fill.f-mute{background:var(--ink-3)}
+.bar-val{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--ink);text-align:right;font-weight:500}
+.bar-zero{font-family:var(--mono);font-size:11px;color:var(--stop);font-weight:600;position:absolute;left:4px;top:50%;transform:translateY(-50%)}
+@media (max-width:560px){.bar-row{grid-template-columns:minmax(72px,102px) minmax(0,1fr) 52px;gap:8px}.bar-lab{font-size:12px}}
+
+/* funnel */
+.funnel{display:flex;flex-direction:column;gap:8px;align-items:center}
+.fstep{border:1px solid var(--rule);background:var(--surface-2);border-radius:4px;padding:12px 18px;text-align:center;width:100%;max-width:640px;position:relative}
+.fstep .fn{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.fstep .ft{font-family:var(--cond);font-size:13.5px;color:var(--ink-2);margin-top:5px;line-height:1.35}
+.fstep.hl{border-color:var(--signal);background:var(--signal-soft)}
+.fstep.hl .fn{color:var(--signal)}
+.fdrop{font-family:var(--mono);font-size:11.5px;color:var(--stop);text-align:center;line-height:1.4}
+
+/* flow map */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:10px}
+.node{border:1px solid var(--rule);border-radius:4px;background:var(--surface-2);padding:12px 13px;display:flex;flex-direction:column;gap:6px}
+.node .nn{font-family:var(--mono);font-size:10px;letter-spacing:.11em;color:var(--ink-3);font-weight:600}
+.node .nt{font-family:var(--cond);font-size:15px;font-weight:600;line-height:1.22;color:var(--ink)}
+.node .nd{font-size:13px;color:var(--ink-2);line-height:1.45;font-family:var(--cond)}
+.node .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
+.node.gate{border-color:var(--stop);background:var(--stop-soft)}
+.node.gate .nn{color:var(--stop)}
+
+/* two-column compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:var(--surface)}
+.compare>div{padding:18px 20px}
+.compare>div:first-child{border-right:1px solid var(--rule)}
+.cmp-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.compare ul{margin:0;padding-left:18px;max-width:none}
+.compare li{font-family:var(--cond);font-size:14.5px;line-height:1.45;margin:8px 0;color:var(--ink)}
+@media (max-width:640px){.compare{grid-template-columns:1fr}.compare>div:first-child{border-right:0;border-bottom:1px solid var(--rule)}}
+
+/* ui schematic */
+.ui{border:1px solid var(--rule);border-radius:5px;overflow:hidden;background:var(--surface);font-family:var(--cond)}
+.ui-bar{background:var(--surface-2);border-bottom:1px solid var(--rule);padding:7px 12px;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:.06em;display:flex;justify-content:space-between;align-items:center}
+.ui-body{display:grid;grid-template-columns:170px minmax(0,1fr);min-height:150px}
+.ui-side{border-right:1px solid var(--rule);padding:10px;background:var(--surface-2);font-size:13px;color:var(--ink-2)}
+.ui-side div{padding:3.5px 6px;border-radius:3px;line-height:1.3}
+.ui-side div.sel{background:var(--blueprint-soft);color:var(--blueprint);font-weight:600}
+.ui-main{padding:10px}
+.ui-row{display:grid;grid-template-columns:minmax(0,1fr) 78px 46px;gap:9px;padding:6px 7px;border-bottom:1px solid var(--rule-2);font-size:13px;align-items:center;color:var(--ink)}
+.ui-row.head{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+.ui-row span:nth-child(2),.ui-row span:nth-child(3){font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+.schematic-tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border:1px dashed var(--rule);padding:2px 7px;border-radius:3px}
+@media (max-width:560px){.ui-body{grid-template-columns:1fr}.ui-side{border-right:0;border-bottom:1px solid var(--rule)}}
+
+/* checklist */
+.check{border:1px solid var(--rule);border-radius:4px;background:var(--surface);overflow:hidden}
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;border-bottom:1px solid var(--rule-2)}
+.check-item:last-child{border-bottom:0}
+.check-item input{margin:4px 0 0;width:16px;height:16px;accent-color:var(--blueprint);flex:none;cursor:pointer}
+.check-item label{font-family:var(--cond);font-size:14.5px;line-height:1.45;cursor:pointer;color:var(--ink)}
+.check-item label b{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:2px}
+.check-item.done label{color:var(--ink-3);text-decoration:line-through}
+.check-foot{padding:10px 16px;background:var(--surface-2);border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;color:var(--ink-3);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.check-foot button{font-family:var(--mono);font-size:10.5px;background:none;border:1px solid var(--rule);color:var(--ink-2);padding:3px 10px;border-radius:3px;cursor:pointer;letter-spacing:.05em}
+.check-foot button:hover{border-color:var(--blueprint);color:var(--blueprint)}
+
+/* refs */
+.refs{margin:14px 0 0;padding-left:30px;list-style:decimal;max-width:none}
+.refs li{display:list-item;padding:6px 0 6px 4px;border-bottom:1px solid var(--rule-2);margin:0;font-family:var(--cond);font-size:13.5px;line-height:1.4}
+.refs li::marker{font-family:var(--mono);font-size:11px;color:var(--signal);font-weight:600}
+.refs li a{overflow-wrap:anywhere;font-family:var(--mono);font-size:11px;display:inline-block;margin-top:2px;color:var(--ink-3);text-decoration:none}
+.refs li a:hover{color:var(--blueprint);text-decoration:underline}
+.refs .rt{color:var(--ink);font-weight:500}
+
+.colophon{margin-top:70px;padding-top:22px;border-top:3px solid var(--blueprint);font-family:var(--mono);font-size:11.5px;color:var(--ink-3);line-height:1.75}
+.kicker{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);margin:36px 0 0;display:block;font-weight:600}
+
+
+
+/* ================= motor de slides ================= */
+html{scroll-snap-type:y proximity;scroll-behavior:smooth}
+body{margin:0}
+.slide{height:100vh;min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:flex-start;padding:26px clamp(64px,6vw,96px) 26px;font-size:15.5px;overflow:hidden;position:relative;border-bottom:1px solid var(--rule-2);background:var(--paper)}
+.slide.alt{background:var(--surface-2)}
+.slide .inner{max-width:none;width:100%;margin:0;max-height:calc(100vh - 52px);overflow:auto;scrollbar-width:thin}
+.slide.fit .inner{overflow:visible}
+.slide h2{max-width:none;font-size:clamp(24px,3.2vw,38px);margin-top:6px}
+.slide .lead{font-size:clamp(15.5px,1.35vw,18px);color:var(--ink-2);max-width:none;margin:10px 0 0;line-height:1.5}
+.slide p,.slide ul,.slide ol,.slide .rule-box,.slide .trap,.slide .case,.slide .note,.slide .more,.slide figcaption,.slide .check,.slide .refs,.slide h2{max-width:none}
+.two{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(16px,2.4vw,34px);align-items:start;margin-top:16px}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.two figure,.two .tw,.two .code,.two .term{margin-top:0}
+.kicker-part{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);font-weight:600}
+.kicker-part span{color:var(--ink-3);font-weight:400;margin-left:10px}
+.more{margin-top:16px;max-width:76ch;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+.more summary{cursor:pointer;font-family:var(--cond);font-weight:600;font-size:14px;padding:10px 14px;color:var(--blueprint);list-style:none;display:flex;align-items:center;gap:8px}
+.more summary::before{content:"+";font-family:var(--mono);width:16px;display:inline-block;text-align:center}
+.more[open] summary::before{content:"–"}
+.more>div{padding:0 16px 14px;font-size:15.5px}
+.more>div p,.more>div li{max-width:none;font-size:15.5px}
+.more .tw{margin-top:10px}
+.bul{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:9px}
+.bul li{position:relative;padding-left:24px;font-size:15.5px;line-height:1.5;margin:0}
+.bul li::before{content:"";position:absolute;left:4px;top:9px;width:10px;height:10px;border-radius:2px;background:var(--blueprint)}
+.bul li.warn::before{background:var(--signal)}
+.bul li.stop::before{background:var(--stop)}
+.bul li.go::before{background:var(--go)}
+
+/* capa */
+.slide.cover{justify-content:center;background:var(--paper)}
+.slide.divider{justify-content:center}
+.brand{font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--blueprint);display:inline-flex;align-items:center;gap:10px}
+.brand::before{content:"";width:22px;height:2px;background:var(--signal)}
+.cover h1{font-family:var(--cond);font-weight:700;font-size:clamp(42px,7.2vw,88px);line-height:.98;letter-spacing:-.02em;margin:22px 0 0;text-wrap:balance;max-width:none}
+.cover .lede{font-size:clamp(18px,1.9vw,23px);color:var(--ink-2);max-width:none;margin:22px 0 0;line-height:1.55}
+.cover-meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:24px 40px;font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:.04em}
+.cover-meta b{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px;font-weight:600}
+.cover-meta span{font-family:var(--cond);font-size:15px;color:var(--ink);letter-spacing:0}
+.hint{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);display:flex;align-items:center;gap:8px}
+.hint::after{content:"↓";animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
+/* separador de parte */
+.slide.divider{justify-content:center;background:var(--blueprint);color:#F1F4F7;border-bottom:0}
+.slide.divider .kicker-part{color:#F4B07A}
+.slide.divider .kicker-part span{color:rgba(241,244,247,.6)}
+.slide.divider h2{color:#FFFFFF;font-size:clamp(40px,6vw,74px);max-width:none}
+.slide.divider p{color:rgba(241,244,247,.82);font-size:clamp(17px,1.7vw,21px);max-width:none}
+.slide.divider .num{font-family:var(--mono);font-size:clamp(90px,16vw,200px);font-weight:600;color:rgba(255,255,255,.08);position:absolute;right:4vw;bottom:-2vw;line-height:1;letter-spacing:-.04em;pointer-events:none}
+
+/* barra fixa, progresso, navegação */
+.topbar{position:fixed;top:0;left:0;right:0;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(14px,3vw,28px);background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);z-index:40}
+.topbar .brand{font-size:12px}
+.topbar .where{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.06em;display:flex;align-items:center;gap:12px}
+.topbar .where b{color:var(--ink);font-weight:600}
+.prog{position:fixed;top:0;left:0;height:3px;background:var(--signal);width:0;z-index:41;transition:width .25s ease}
+.navbtn{position:fixed;left:clamp(8px,1.2vw,18px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:40;align-items:center;opacity:.28;transition:opacity .25s ease}
+.navbtn:hover,.navbtn:focus-within{opacity:1}
+@media (hover:none){.navbtn{opacity:.85}}
+.navbtn .cnt{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.04em;margin-top:2px}
+.navbtn .cnt b{color:var(--ink)}
+.navbtn button,.menubtn{font-family:var(--mono);font-size:13px;width:42px;height:42px;border-radius:4px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);cursor:pointer;box-shadow:var(--shadow);display:inline-flex;align-items:center;justify-content:center}
+.navbtn button:hover,.menubtn:hover{border-color:var(--blueprint);color:var(--blueprint)}
+.menubtn{font-size:16px}
+.menu{position:fixed;inset:0 auto 0 0;width:min(360px,92vw);background:var(--surface);border-right:1px solid var(--rule);box-shadow:var(--shadow);z-index:45;overflow-y:auto;padding:14px 10px 40px;transform:translateX(-102%);transition:transform .28s ease}
+.menu.open{transform:none}
+.menu .grp{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding:14px 10px 4px;border-top:1px solid var(--rule-2);margin-top:6px}
+.menu .grp:first-child{border-top:0;margin-top:0}
+.menu a{display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink-2);font-family:var(--cond);font-size:14px;padding:6px 10px;border-radius:3px;border-left:2px solid transparent}
+.menu a .n{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);min-width:20px;font-variant-numeric:tabular-nums}
+.menu a:hover{background:var(--blueprint-soft);color:var(--ink)}
+.menu a.on{border-left-color:var(--blueprint);color:var(--blueprint);background:var(--blueprint-soft);font-weight:600}
+.scrim{position:fixed;inset:0;background:rgba(16,23,32,.25);z-index:44;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+
+/* efeitos de entrada — estado de repouso legível; só deslocamento e leve fade */
+.rv{transform:translateY(16px);opacity:.55;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .55s ease}
+.slide.in .rv{transform:none;opacity:1}
+.slide.in .rv:nth-child(2){transition-delay:.06s}.slide.in .rv:nth-child(3){transition-delay:.12s}.slide.in .rv:nth-child(4){transition-delay:.18s}.slide.in .rv:nth-child(5){transition-delay:.24s}.slide.in .rv:nth-child(6){transition-delay:.30s}
+.slide.cover .rv{transform:none;opacity:1}
+@media (prefers-reduced-motion:reduce){.rv{transform:none;opacity:1;transition:none}.hint::after{animation:none}.prog{transition:none}.menu{transition:none}}
+
+/* figuras leves */
+.shot{border:1px solid var(--rule);border-radius:5px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.shot img{display:block;width:100%;height:auto}
+.sets{position:relative;height:250px;max-width:520px;margin:0 auto;font-family:var(--cond)}
+.sets div{position:absolute;border-radius:50%;border:1.5px solid var(--rule);display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px;font-size:13px;color:var(--ink-2);text-align:center;line-height:1.3}
+.sets .s1{inset:0;background:var(--surface-2)}
+.sets .s2{inset:12% 15% 8% 15%;background:var(--amber-soft);border-color:var(--amber)}
+.sets .s3{inset:38% 32% 14% 32%;background:var(--signal-soft);border-color:var(--signal);align-items:center;padding:0;font-weight:600;color:var(--signal)}
+.dec{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:20px}
+.dec div{border:1px solid var(--rule);border-radius:4px;padding:12px 14px;background:var(--surface)}
+.dec b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:6px}
+.dec .h{border-left:3px solid var(--stop)}.dec .h b{color:var(--stop)}
+.dec .p{border-left:3px solid var(--amber)}.dec .p b{color:var(--amber)}
+.dec .m{border-left:3px solid var(--go)}.dec .m b{color:var(--go)}
+.dec ul{margin:0;padding-left:16px;max-width:none}
+.dec li{font-family:var(--cond);font-size:14px;line-height:1.4;margin:4px 0}
+
+/* impressão: um slide por página */
+@page{size:A4 landscape;margin:12mm}
+@media print{
+  html{scroll-snap-type:none}
+  body{background:#fff;color:#101720}
+  .prog,.navbtn,.menubtn,.menu,.scrim,.hint{display:none!important}
+  .slide{min-height:0;height:auto;break-after:page;padding:8mm 4mm;border:0;justify-content:flex-start;overflow:visible}
+  .slide .inner{max-height:none;overflow:visible;zoom:1!important}
+  .slide.divider{background:#17436B!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .rv{transform:none;opacity:1}
+  .more{display:block}.more>div{display:block}
+  .term{background:#0B1219!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .rule-box,.trap,.case,.note,.pill,.bar-fill,.bar-track,.node,.dec div,.sets div{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .code pre,.term pre{white-space:pre-wrap;word-break:break-word}
+  a{color:inherit;text-decoration:none}
+}
+
+/* limites de altura: um slide por tela */
+.slide .tw{max-height:none;overflow:auto}
+.slide .tw table{font-size:13.5px}
+.slide .tw td,.slide .tw th{padding:8px 11px}
+.slide figure{margin-top:14px}
+.slide .shot img{max-height:34vh;width:auto;max-width:100%;margin:0 auto}
+.slide .code pre,.slide .term pre{max-height:none;overflow:auto;font-size:12px}
+.slide .rule-box,.slide .trap,.slide .case,.slide .note{margin-top:14px;padding:12px 16px}
+.slide .rule-box p,.slide .trap p,.slide .case p,.slide .note p{font-size:14.5px}
+.slide ol,.slide ul{margin-top:10px}
+.slide li{margin:5px 0;font-size:15px}
+.slide h4{margin-top:14px}
+.slide .check{max-height:none}
+.slide .refs{max-height:none}
+.slide .refs li{font-size:13px;padding:6px 0 6px 4px}
+.slide figcaption{font-size:12.5px;margin-top:8px}
+.slide .dec ul{padding-left:14px}.slide .dec li{font-size:13.5px}
+.slide .frame{padding:16px}
+.slide .sets{height:210px}
+@media (max-height:760px){.slide .shot img{max-height:30vh}}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+.three figure{margin:0}
+.three .shot img{max-height:none}
+@media (max-width:900px){.three{grid-template-columns:1fr}}
+.slide .node{padding:9px 11px;gap:4px}.slide .node .nt{font-size:14px}.slide .node .nd{font-size:12px}
+
+/* ================= celular e tablet ================= */
+@media (max-width:900px){
+  html{scroll-snap-type:none}
+  .slide{height:auto;min-height:0;overflow:visible;padding:26px 16px 30px;scroll-snap-align:none;font-size:15px}
+  .slide .inner{max-height:none;overflow:visible;zoom:1!important}
+  .slide.cover,.slide.divider{min-height:72vh;padding:40px 18px}
+  .cover h1{font-size:clamp(38px,11vw,60px)}
+  .cover .lede{font-size:17px}
+  .cover-meta{gap:14px 24px}
+  .hint{display:none}
+  .slide h2{font-size:clamp(23px,6.4vw,30px)}
+  .slide .lead{font-size:15.5px}
+  .kicker-part span{display:block;margin-left:0;margin-top:2px}
+  .two,.three{grid-template-columns:minmax(0,1fr);gap:14px}
+  .slide{max-width:100vw;overflow-x:hidden}
+  .slide .inner{min-width:0}
+  .two>*,.three>*{min-width:0}
+  .slide .tw{max-height:none}
+  .slide .tw table{min-width:560px;font-size:13px}
+  .slide .shot img{max-height:none}
+  .slide .code pre,.slide .term pre{max-height:none;font-size:11.5px}
+  .slide .refs,.slide .check{max-height:none}
+  .compare{grid-template-columns:minmax(0,1fr)}.compare>div:first-child{border-right:0;border-bottom:1px solid var(--rule)}
+  .dec{grid-template-columns:minmax(0,1fr)}
+  .flow{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+  .sets{height:200px}
+  .navbtn{left:auto;right:10px;top:auto;bottom:10px;transform:none;flex-direction:row;gap:6px;padding:6px;background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow)}
+  .navbtn button,.menubtn{width:38px;height:38px;box-shadow:none}
+  .navbtn .cnt{margin:0 4px 0 2px}
+  .menu{width:100vw;inset:0 0 0 0}
+  .slide.divider .num{font-size:24vw;right:2vw;bottom:-3vw}
+  .rule-box,.trap,.case,.note{padding:12px 14px}
+}
+@media (max-width:480px){
+  .slide{padding:22px 12px 26px}
+  .plate div,.cover-meta div{width:100%}
+  .bar-row{grid-template-columns:minmax(64px,90px) minmax(0,1fr) 46px;gap:6px}
+  .ui-body{grid-template-columns:1fr}.ui-side{border-right:0;border-bottom:1px solid var(--rule)}
+}
+.gl4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:14px}
+.gl{column-count:1}
+.gl{margin:0;font-family:var(--cond);font-size:12.5px;line-height:1.38;columns:2;column-gap:18px}
+.gl dt{break-inside:avoid}.gl dd{break-inside:avoid}
+@media (max-width:640px){.gl{columns:1}}
+.gl dt{font-weight:600;color:var(--blueprint);margin-top:7px}
+.gl dd{margin:1px 0 0;color:var(--ink-2)}
+
+@media (max-width:640px){.gl4{grid-template-columns:minmax(0,1fr)}}
+.menu-head{display:flex;justify-content:space-between;align-items:center;padding:8px 10px 10px;border-bottom:1px solid var(--rule);margin-bottom:6px}
+.menu-head button{font-family:var(--mono);font-size:20px;line-height:1;width:34px;height:34px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink-2);cursor:pointer}
+.menu-head button:hover{border-color:var(--blueprint);color:var(--blueprint)}
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:4vh 4vw;background:rgba(16,23,32,.45)}
+.modal.on{display:flex}
+.modal-box{background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);max-width:1100px;width:100%;max-height:92vh;display:flex;flex-direction:column}
+.modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--rule);font-family:var(--cond);font-weight:600;font-size:15px;color:var(--blueprint)}
+.modal-head button{font-family:var(--mono);font-size:20px;line-height:1;width:34px;height:34px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink-2);cursor:pointer}
+.modal-body{padding:14px 18px 20px;overflow:auto;font-size:15px}
+.modal-body p,.modal-body li{max-width:none;font-size:15px}
+.modal-body .tw{margin-top:10px}.modal-body .two{margin-top:8px}
+.modal-body .shot img{max-height:60vh;width:auto;max-width:100%}
+/* 4) botão de copiar */
+.code,.term{position:relative}
+.copy{position:absolute;top:6px;right:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:3px 8px;border-radius:3px;border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);cursor:pointer;opacity:.75;z-index:2}
+.copy:hover{opacity:1;border-color:var(--blueprint);color:var(--blueprint)}
+.term .copy{background:#141F2B;border-color:#2B3B4C;color:#9FB1C2}
+.copy.ok{color:var(--go);border-color:var(--go)}
+.gterm{text-decoration:underline dotted var(--blueprint-2);text-decoration-thickness:1.5px;text-underline-offset:3px;cursor:help}
+.gterm:hover,.gterm:focus{background:var(--blueprint-soft);outline:none;border-radius:2px}
+.gpop{position:fixed;z-index:70;max-width:340px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-left:3px solid var(--blueprint);border-radius:4px;box-shadow:var(--shadow);padding:10px 12px;font-family:var(--cond);font-size:13.5px;line-height:1.45;display:none;pointer-events:none}
+.gpop.on{display:block}
+.gpop b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--blueprint);margin-bottom:4px}
+@media (hover:none){.gpop{pointer-events:auto}}
+.slide .check{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.slide .check .check-foot{grid-column:1/-1}
+.slide .check-item{border-right:1px solid var(--rule-2)}.slide .check-item:nth-child(even){border-right:0}
+.slide .refs{columns:2;column-gap:28px}.slide .refs li{break-inside:avoid}
+#s06 .tw td,#s06 .tw th{padding:6px 10px}
+@media (max-width:900px){.slide .check{grid-template-columns:minmax(0,1fr)}.slide .check-item{border-right:0}.slide .refs{columns:1}}
+
+/* extras deste manual */
+.gantt{display:grid;grid-template-columns:150px repeat(12,minmax(0,1fr));gap:4px 0;font-family:var(--cond);font-size:12.5px;align-items:center}
+.gantt .gl{padding-right:8px;color:var(--ink-2);text-align:right}
+.gantt .gm{font-family:var(--mono);font-size:10px;color:var(--ink-3);text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.gantt .gb{height:14px;border-radius:2px;background:var(--blueprint);margin:3px 1px}
+.gantt .gb.s{background:var(--signal)}.gantt .gb.g{background:var(--go)}.gantt .gb.a{background:var(--amber)}
+.cycle{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.cycle .node{align-items:center;text-align:center}
+.struct{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.struct>div{border:1px solid var(--rule);border-radius:4px;background:var(--surface);padding:10px 12px}
+.struct h5{margin:0 0 6px;font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--blueprint)}
+.struct ol,.struct ul{margin:0;padding-left:16px}.struct li{font-family:var(--cond);font-size:13px;line-height:1.35;margin:2px 0}
+@media (max-width:900px){.struct{grid-template-columns:minmax(0,1fr)}.gantt{grid-template-columns:110px repeat(12,minmax(0,1fr))}}
+
+/* lupa: clique na captura para ampliar */
+.shot img{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(10,14,20,.88);display:none;align-items:center;justify-content:center;padding:3vh 3vw;cursor:zoom-out}
+.lightbox.on{display:flex}
+.lightbox img{max-width:94vw;max-height:88vh;width:auto;height:auto;border-radius:4px;box-shadow:0 12px 40px rgba(0,0,0,.6);background:#fff}
+.lightbox figcaption{position:absolute;left:50%;bottom:1.6vh;transform:translateX(-50%);max-width:90vw;font-family:var(--cond);font-size:13.5px;color:#E3E9EF;text-align:center;line-height:1.4;padding:6px 12px;background:rgba(10,14,20,.6);border-radius:4px}
+.lightbox .lb-close{position:absolute;top:12px;right:14px;width:40px;height:40px;border-radius:4px;border:1px solid rgba(255,255,255,.3);background:rgba(10,14,20,.5);color:#fff;font:20px/1 var(--mono);cursor:pointer}
+.lightbox .lb-hint{position:absolute;top:18px;left:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+@media print{.lightbox{display:none!important}}
+</style>
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+<div class="scrim" id="scrim"></div>
+<div class="gpop" id="gpop" role="tooltip"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-box"><div class="modal-head"><span id="modal-title">detalhes</span><button type="button" id="modal-close" aria-label="Fechar">×</button></div><div class="modal-body" id="modal-body"></div></div></div>
+<nav class="menu" id="menu" aria-label="Sumário"><div class="menu-head"><span class="brand">MirandasTech</span><button type="button" id="menuclose" aria-label="Fechar sumário">×</button></div><div id="menulist"></div></nav>
+<div class="navbtn"><button class="menubtn" id="menubtn" aria-label="Abrir sumário">☰</button><button id="prev" aria-label="Slide anterior">↑</button><button id="next" aria-label="Próximo slide">↓</button><span class="cnt"><b id="cur">1</b>/<span id="tot">–</span></span></div>
+
+
+<main id="deck">
+<!-- ===================== CAPA ===================== -->
+<section class="slide cover" id="s00" data-title="Capa">
+  <div class="inner">
+    <span class="brand rv">MirandasTech · Manual profissional</span>
+    <h1 class="rv">Defesa e qualificação: como se preparar</h1>
+    <p class="lede rv">Do regimento à versão final: o que a lei e o programa decidem, o texto que a banca lê, a apresentação com tempo por bloco (esqueleto <em>Beamer</em> compilado de verdade), três ensaios cronometrados, a banca simulada, o dia da sessão e o que vem depois — <strong>com páginas públicas de programas reais, saídas reais de terminal e cada fato datado</strong>. O regimento do seu programa prevalece sobre qualquer número deste manual.</p>
+    <div class="cover-meta rv">
+      <div><b>Série</b><span>Manuais MirandasTech · pesquisa científica</span></div>
+      <div><b>Versão</b><span>1.0 · setembro de 2026</span></div>
+      <div><b>Formato</b><span><span id="nslides">–</span> slides</span></div>
+      <div><b>Licença</b><span>CC BY 4.0 — cite a fonte</span></div>
+    </div>
+  </div>
+  <div class="hint">role para começar</div>
+</section>
+
+<section class="slide" id="s01" data-title="Para quem é e o que você vai aprender">
+  <div class="inner">
+    <div class="kicker-part rv">Como usar<span>cada slide é um passo que você executa no regimento, no texto, no terminal ou na sala de ensaio</span></div>
+    <h2 class="rv">Para quem é — e o que você vai saber fazer ao final</h2>
+    <p class="lead rv">Este manual é para <strong>mestrandos e doutorandos a caminho da <span class="gterm" tabindex="0" data-t="Qualificação" data-d="Exame anterior à defesa em que a banca avalia o projeto e a capacidade de executá-lo; no PPG-UFC, até 60 dias antes da defesa, com pelo menos 3 membros.">qualificação</span> ou da <span class="gterm" tabindex="0" data-t="Defesa" data-d="Sessão, pública nos exemplos brasileiros, em que o trabalho de conclusão é apresentado e arguido pela banca; termina com a deliberação e a ata.">defesa</span></strong>. <span class="gterm" tabindex="0" data-t="Qualificação" data-d="Exame anterior à defesa em que a banca avalia o projeto e a capacidade de executá-lo; no PPG-UFC, até 60 dias antes da defesa, com pelo menos 3 membros.">Qualificação</span> é o exame, anterior à <span class="gterm" tabindex="0" data-t="Defesa" data-d="Sessão, pública nos exemplos brasileiros, em que o trabalho de conclusão é apresentado e arguido pela banca; termina com a deliberação e a ata.">defesa</span>, em que uma banca avalia o projeto e a sua capacidade de executá-lo; <strong>defesa</strong> é a sessão em que o trabalho de conclusão — <span class="gterm" tabindex="0" data-t="Dissertação · tese" data-d="O trabalho de conclusão do mestrado e o do doutorado; a Resolução CNE/CES nº 7/2017 diz que os cursos se diferenciam pela «natureza do trabalho de conclusão».">dissertação</span> (mestrado) ou <span class="gterm" tabindex="0" data-t="Dissertação · tese" data-d="O trabalho de conclusão do mestrado e o do doutorado; a Resolução CNE/CES nº 7/2017 diz que os cursos se diferenciam pela «natureza do trabalho de conclusão».">tese</span> (doutorado) — é apresentado e discutido com a banca; <strong><span class="gterm" tabindex="0" data-t="Arguição" data-d="A parte em que os membros perguntam e o candidato responde: por membro, com tempo igual de resposta (UFSC, UFSM), ou em diálogo (UFSM em comum acordo, UENF).">arguição</span></strong> é a parte em que cada membro pergunta e você responde; <strong><span class="gterm" tabindex="0" data-t="Ata" data-d="O documento da sessão: resultado, condições, formato (UFSM) e assinaturas — digitais ou em plataforma (UFSM, UFES).">ata</span></strong> é o documento que registra o resultado. Nada aqui exige programação: os três scripts estão prontos, e as saídas ao lado são as reais de uma sessão de terminal feita em 09/09/2026, com pasta e autora fictícias. As páginas de programas aparecem em capturas públicas, sem login.</p>
+    <div class="two rv">
+      <div>
+        <h4>Ao final, você vai conseguir</h4>
+        <ul class="bul">
+          <li><strong>Ler</strong> o <span class="gterm" tabindex="0" data-t="Regimento" data-d="As normas do programa (e da universidade) que fixam tempo, banca, arguição, prazos, formato e documentos; prevalece sobre este manual.">regimento</span> do seu programa e extrair os seis números que mandam: tempo de apresentação, banca, <span class="gterm" tabindex="0" data-t="Arguição" data-d="A parte em que os membros perguntam e o candidato responde: por membro, com tempo igual de resposta (UFSC, UFSM), ou em diálogo (UFSM em comum acordo, UENF).">arguição</span>, prazos, formato e documentos — e distinguir o que a <span class="gterm" tabindex="0" data-t="Resolução CNE/CES nº 7/2017" data-d="A norma nacional dos cursos stricto sensu: avaliação pela Capes, diplomas com validade nacional, língua estrangeira admitida, defesa direta de tese só excepcionalmente.">Resolução CNE/CES nº 7/2017</span> fixa do que ela deixa ao programa.</li>
+          <li><strong>Diferenciar</strong> qualificação e defesa — objetivo, momento, banca e resultado — nos exemplos de cinco programas (UFC, UFSC, UFSM, UENF, UFES).</li>
+          <li><strong>Fechar</strong> o texto antes da banca: números conferidos, citações e referências verificadas, limitações escritas por você.</li>
+          <li><strong>Montar</strong> a apresentação por bloco com tempo (<code>apresentacao_defesa.py</code>), em <span class="gterm" tabindex="0" data-t="Beamer" data-d="Classe LaTeX para apresentações (CTAN, versão 3.78); incluída no TeX Live e no MiKTeX; compila no Overleaf.">Beamer</span>, Impress ou Apresentações Google, no formato que o <span class="gterm" tabindex="0" data-t="Regimento" data-d="As normas do programa (e da universidade) que fixam tempo, banca, arguição, prazos, formato e documentos; prevalece sobre este manual.">regimento</span> pede.</li>
+          <li><strong>Ensaiar</strong> três vezes com cronômetro (<code>ensaio_defesa.py</code>), simular a banca com as cinco objeções mais fortes e responder em três frases honestas.</li>
+          <li><strong>Cumprir</strong> o checklist antes, no dia e depois (<code>checklist_defesa.py</code>): <span class="gterm" tabindex="0" data-t="Ata" data-d="O documento da sessão: resultado, condições, formato (UFSM) e assinaturas — digitais ou em plataforma (UFSM, UFES).">ata</span>, correções, <span class="gterm" tabindex="0" data-t="Versão final" data-d="O texto corrigido depois da defesa, aceito pelo orientador (e pela banca, quando o regimento pede).">versão final</span>, <span class="gterm" tabindex="0" data-t="Depósito" data-d="A entrega formal: da versão final ao acervo da instituição, ou — na UFES — do texto antes da defesa, com PDF de até 15 MB.">depósito</span>, dados e código com <span class="gterm" tabindex="0" data-t="DOI" data-d="Digital Object Identifier: identificador permanente; para dados e código, emitido no depósito em repositório aberto (manuais de Git e Ciência aberta).">DOI</span>, diploma.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra central</span><p><strong>O regimento do seu programa prevalece.</strong> Todo número de tempo, banca ou prazo deste manual vem com o nome do programa de onde saiu — 35 a 40 minutos no PPG em Ciências Médico-Cirúrgicas da UFC, aproximadamente 30 no PPG em Educação da UFSC, até 50 no PPG em Engenharia Civil da UFSM — e é citado como exemplo da variedade, lido em página pública em 09/09/2026. Nenhum deles é «a regra».</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>Preparar os slides antes de ler o regimento.</strong> Quem monta 40 minutos de apresentação para um programa que dá 30 corta na véspera; quem leva só o PDF a um programa que pede <code>.pptx</code> em pendrive (PPG-UFC) descobre na sala. O slide «A regra: ler o regimento primeiro» e o <code>checklist_defesa.py</code> vêm antes de tudo.</p></div>
+        <div class="note"><span class="blabel">Manuais irmãos</span><p>Este manual cuida da <em>preparação para a banca</em>. O que vem antes está nos manuais de <a href="https://metodologia.mirandastech.com.br/">Metodologia</a> (o projeto), <a href="https://busca.mirandastech.com.br/">Busca</a> e <a href="https://prisma.mirandastech.com.br/">PRISMA</a> (a revisão), <a href="https://zotero.mirandastech.com.br/">Zotero</a> (as referências), <a href="https://latex.mirandastech.com.br/">LaTeX</a> (o texto e o <span class="gterm" tabindex="0" data-t="Beamer" data-d="Classe LaTeX para apresentações (CTAN, versão 3.78); incluída no TeX Live e no MiKTeX; compila no Overleaf.">Beamer</span>), <a href="https://dados.mirandastech.com.br/">Dados</a> (as figuras por script), <a href="https://git.mirandastech.com.br/">Git</a> e <a href="https://cienciaaberta.mirandastech.com.br/">Ciência aberta</a> (o <span class="gterm" tabindex="0" data-t="DOI" data-d="Digital Object Identifier: identificador permanente; para dados e código, emitido no depósito em repositório aberto (manuais de Git e Ciência aberta).">DOI</span>), <a href="https://manual.mirandastech.com.br/">Uso de IA</a> (declarar) e <a href="https://plugin.mirandastech.com.br/">Plugin</a> (o agente). Hub: <a href="https://www.mirandastech.com.br/pesquisa">mirandastech.com.br/pesquisa</a>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s02" data-title="Mapa: do regimento à versão final">
+  <div class="inner">
+    <div class="kicker-part rv">Introdução<span>o roteiro do manual segue a ordem do calendário da defesa</span></div>
+    <h2 class="rv">Mapa: do regimento à versão final — e onde cada parte do manual entra</h2>
+    <div class="flow rv">
+      <div class="node"><span class="nn">1</span><span class="nt">Regimento</span><span class="nd">Tempo, banca, arguição, prazos, formato, documentos; a coluna «Prazo do regimento» do checklist preenchida</span></div>
+      <div class="node"><span class="nn">2</span><span class="nt">Texto fechado</span><span class="nd">Números iguais nas tabelas, citações e referências verificadas, limitações escritas por você</span></div>
+      <div class="node"><span class="nn">3</span><span class="nt">Apresentação</span><span class="nd">Roteiro por bloco com tempo (<code>apresentacao_defesa.py</code>); um resultado por slide; PDF e o formato pedido</span></div>
+      <div class="node"><span class="nn">4</span><span class="nt">Ensaios</span><span class="nd">Três com cronômetro (<code>ensaio_defesa.py</code>); o último com público; cortar onde <span class="gterm" tabindex="0" data-t="ESTOUROU · curto · ok" data-d="As marcas do ensaio_defesa.py: acima de +15 % do previsto, abaixo de −30 %, e entre os dois.">estourou</span></span></div>
+      <div class="node"><span class="nn">5</span><span class="nt"><span class="gterm" tabindex="0" data-t="Banca simulada" data-d="Skill do plugin que produz as cinco objeções mais fortes e a arguição por seção, sem inventar literatura; grava 06_texto/banca.md.">Banca simulada</span></span><span class="nd">As cinco objeções mais fortes; resposta honesta em três frases; o que muda no texto</span></div>
+      <div class="node"><span class="nn">6</span><span class="nt">O dia</span><span class="nd">Material, tempo, anotar cada pergunta antes de responder, resultado, ata</span></div>
+      <div class="node gate"><span class="nn">7</span><span class="nt">Depois</span><span class="nd">Correções no prazo do regimento, <span class="gterm" tabindex="0" data-t="Versão final" data-d="O texto corrigido depois da defesa, aceito pelo orientador (e pela banca, quando o regimento pede).">versão final</span>, <span class="gterm" tabindex="0" data-t="Depósito" data-d="A entrega formal: da versão final ao acervo da instituição, ou — na UFES — do texto antes da defesa, com PDF de até 15 MB.">depósito</span>, dados e código com DOI, diploma</span></div>
+    </div>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:190px">Parte</th><th>O que cobre</th><th style="width:110px">Passos</th></tr></thead><tbody>
+        <tr><td><b>1 O que a lei e o regimento decidem</b></td><td><span class="gterm" tabindex="0" data-t="Resolução CNE/CES nº 7/2017" data-d="A norma nacional dos cursos stricto sensu: avaliação pela Capes, diplomas com validade nacional, língua estrangeira admitida, defesa direta de tese só excepcionalmente.">Resolução CNE/CES nº 7/2017</span> · <span class="gterm" tabindex="0" data-t="CAPES" data-d="Órgão que avalia os programas de pós-graduação; a Avaliação Quadrienal e o Catálogo de Teses são dela.">CAPES</span> e Sucupira · qualificação × defesa · cinco regimentos lado a lado · resultados e prazos · roteiro de uma sessão · formatos e documentos · a regra</td><td>Passo 1</td></tr>
+        <tr><td><b>2 O texto antes da banca</b></td><td>O que a banca lê e procura · números, citações e referências · limitações ditas por você · onde as dissertações ficam</td><td>Passo 2</td></tr>
+        <tr><td><b>3 A apresentação</b></td><td>Roteiro por bloco · <code>apresentacao_defesa.py</code> · Beamer compilado · Beamer, Impress e Apresentações Google · regras de slide · limitações, conclusão e referências</td><td>Passo 3</td></tr>
+        <tr><td><b>4 Ensaio e <span class="gterm" tabindex="0" data-t="Banca simulada" data-d="Skill do plugin que produz as cinco objeções mais fortes e a arguição por seção, sem inventar literatura; grava 06_texto/banca.md.">banca simulada</span></b></td><td><code>ensaio_defesa.py</code> · três ensaios · banca simulada · perguntas prováveis por seção · como responder</td><td>Passos 4 e 5</td></tr>
+        <tr><td><b>5 O dia e depois</b></td><td><code>checklist_defesa.py</code> · no dia · correções e prazos · versão final e depósito · plugin · erros comuns · checklist · glossário · referências</td><td>Passos 6 e 7</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Como ler</span><p>Quem ainda não marcou a data começa na Parte 1 com o regimento aberto ao lado. Quem já tem o texto fechado vai à Parte 3 e roda o <code>apresentacao_defesa.py</code>. Quem defende em duas semanas vai direto à Parte 4 (ensaios e banca simulada) e à Parte 5 (o dia) — e volta à Parte 1 só para conferir os seis números do regimento.</p></div>
+        <div class="note"><span class="blabel">Convenções</span><p>Nomes de programas sempre acompanham o número que vem deles. Capturas de páginas em 1920 × 938, feitas em 09/09/2026 sem login. Figuras de terminal e do Beamer com «execução real»: sessão desta máquina, pasta fictícia <code>/home/usuario/minha-pesquisa</code>, autora fictícia «Aluna Exemplo». Os tempos do ensaio na Figura 18 são simulados e ditos como tal. Nenhuma sessão de defesa foi gravada ou reproduzida.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTE 1 ===================== -->
+<section class="slide divider" id="s03" data-title="Parte 1 · O que a lei e o regimento decidem"><div class="inner"><div class="kicker-part rv">Parte 1<span>O que a lei e o regimento decidem</span></div><h2 class="rv">A Resolução CNE/CES nº 7/2017; a CAPES e a Plataforma Sucupira; qualificação e defesa; cinco regimentos lado a lado; resultados e prazos; o roteiro de uma sessão; formatos e documentos; a regra</h2><p class="rv">A lei diz pouco sobre a sessão: quem avalia os cursos e que o diploma vale no país inteiro. Tempo de apresentação, banca, arguição e prazos são do regimento de cada programa — e os cinco exemplos desta parte, lidos em páginas públicas em 09/09/2026, mostram o quanto eles variam.</p></div><div class="num">01</div></section>
+
+<section class="slide" id="s04" data-title="Resolução CNE/CES nº 7/2017">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>1 de 8 · Resolução CNE/CES nº 7, de 11/12/2017 (DOU nº 237, 12/12/2017, seção 1, p. 21) · captura de 09/09/2026</span></div>
+    <h2 class="rv">Resolução CNE/CES nº 7/2017: o que a norma nacional fixa — e o que ela deixa para o regimento do programa</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_08_resolucao_cne_7_2017.jpg" width="1920" height="938" alt="Página de legislação da ABMES com a Resolução CNE/CES nº 7, de 11 de dezembro de 2017, a ementa Estabelece normas para o funcionamento de cursos de pós-graduação stricto sensu e as resoluções que ela revoga"></div><figcaption><b>Figura 1</b> O texto público da Resolução CNE/CES nº 7/2017 na página de legislação da ABMES (captura de 09/09/2026, sem login): «Estabelece normas para o funcionamento de cursos de pós-graduação stricto sensu»; DOU de 12/12/2017; revoga as Resoluções CNE/CES nº 1/2001 e nº 24/2002. O PDF foi lido diretamente para os artigos citados ao lado.</figcaption></figure>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:250px">O que a resolução fixa</th><th>Onde</th></tr></thead><tbody>
+          <tr><td><b>Mestrado e doutorado regulares</b> pertencem ao Sistema Nacional de Pós-Graduação: avaliados pela <span class="gterm" tabindex="0" data-t="CAPES" data-d="Órgão que avalia os programas de pós-graduação; a Avaliação Quadrienal e o Catálogo de Teses são dela.">Capes</span>, deliberados pela CES/CNE, homologados pelo Ministro</td><td>Art. 1º</td></tr>
+          <tr><td>Os dois «se diferenciam pela duração, complexidade, aprofundamento e natureza do trabalho de conclusão»; concluir o mestrado <em>não</em> é condição para o doutorado</td><td>Art. 1º, §2º e §3º</td></tr>
+          <tr><td>«É admitido o uso de língua estrangeira nas atividades…, incluindo trabalhos, dissertações e teses»</td><td>Art. 1º, §4º</td></tr>
+          <tr><td>Modalidade profissional; educação a distância; cursos associativos e interinstitucionais</td><td>Arts. 2º, 3º e 9º</td></tr>
+          <tr><td>Autorização, reconhecimento e renovação dependem de avaliação prévia da Capes; curso sem nota mínima pode ser desativado</td><td>Arts. 4º e 6º</td></tr>
+          <tr><td>«Os diplomas de cursos de mestrado e doutorado regulares terão validade nacional»</td><td>Art. 8º, §2º</td></tr>
+          <tr><td>Título de doutor «mediante defesa direta de <span class="gterm" tabindex="0" data-t="Dissertação · tese" data-d="O trabalho de conclusão do mestrado e o do doutorado; a Resolução CNE/CES nº 7/2017 diz que os cursos se diferenciam pela «natureza do trabalho de conclusão».">tese</span>» só excepcionalmente</td><td>Art. 10</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">O que ela não fixa</span><p>Tempo de apresentação, composição da banca, forma da arguição e prazos de agendamento, entrega e versão final. <strong>Tudo isso é do regimento de cada programa</strong> — por isso os slides seguintes trazem cinco regimentos nomeados, e o seu é o que vale.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s05" data-title="CAPES e Plataforma Sucupira">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>2 de 8 · gov.br/capes «Sobre a Avaliação» · Plataforma Sucupira 4.1.54 · capturas de 09/09/2026</span></div>
+    <h2 class="rv">CAPES e Plataforma Sucupira: quem avalia o seu programa — e onde se confere que o curso é avaliado e reconhecido</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_09_capes_avaliacao.jpg" width="1920" height="938" alt="Página da CAPES Sobre a Avaliação: Conceitos, processos e normas, com os cartões Avaliação, Mestrado e Doutorado: o que são?, Mestrado Profissional e Legislação específica"></div><figcaption><b>Figura 2</b> gov.br/capes, «Sobre a Avaliação: Conceitos, processos e normas» (captura de 09/09/2026, sem login): cartões «Avaliação — Conceitos, processos e normas», «Mestrado e Doutorado: o que são?», «Mestrado Profissional: o que é?» e «Legislação específica». A página fundamenta o sistema no Parecer CES/CFE nº 977/1965 e descreve cursos «de natureza acadêmica e de pesquisa», com «objetivo essencialmente científico»; não define duração, dissertação, tese nem defesa.</figcaption></figure>
+      <figure><div class="shot"><img src="capturas/df_10_sucupira.jpg" width="1920" height="938" alt="Página inicial da Plataforma Sucupira, versão 4.1.54, com os cartões Cursos avaliados e reconhecidos, Avaliação Quadrienal, Observatório da pós-graduação e Coleta de Dados"></div><figcaption><b>Figura 3</b> A Plataforma Sucupira, «A maior plataforma de dados conectados da pós-graduação brasileira», versão 4.1.54 (captura de 09/09/2026, sem login): «Cursos avaliados e reconhecidos», «Avaliação Quadrienal», «Coleta de Dados». É aqui que se consulta a situação do programa em que você vai defender.</figcaption></figure>
+    </div>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:190px">O que a CAPES diz</th><th>O que muda para você</th></tr></thead><tbody>
+        <tr><td><b>Objetivos da pós-graduação</b></td><td>Formar professores, estimular a pesquisa, formar quadros de alto padrão — a banca avalia se o trabalho mostra isso, não se ele é «perfeito»</td></tr>
+        <tr><td><b>Avaliação pela Capes</b></td><td>O programa é avaliado periodicamente (Avaliação Quadrienal); a Resolução CNE/CES nº 7/2017 liga autorização, reconhecimento e renovação a essa avaliação</td></tr>
+        <tr><td><b>Cursos avaliados e reconhecidos</b></td><td>O cartão da Sucupira confirma a situação do curso; é o curso reconhecido que emite o diploma com validade nacional (Art. 8º, §2º)</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Nem a CAPES nem a resolução dizem quanto tempo você fala nem quantos membros a banca tem. Quando alguém afirmar «a CAPES exige X minutos», peça a fonte: a regra está no regimento do programa, e é lá que o slide «A regra: ler o regimento primeiro» manda procurar.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s06" data-title="Qualificação × defesa">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>3 de 8 · PPG em Ciências Médico-Cirúrgicas, UFC (ppgcmc.ufc.br) · captura de 09/09/2026</span></div>
+    <h2 class="rv">Qualificação × defesa: o exame que avalia o projeto e a sessão que avalia o trabalho concluído — o exemplo do PPG-UFC</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_01_ufc_orientacoes.jpg" width="1920" height="938" alt="Página Orientações – Qualificações e Defesas do PPG em Ciências Médico-Cirúrgicas da UFC, com as regras de agendamento, composição da banca, prazo da qualificação, tempo de apresentação e conceito aprovado ou reprovado"></div><figcaption><b>Figura 4</b> «Orientações – Qualificações e Defesas», PPG em Ciências Médico-Cirúrgicas da UFC (captura de 09/09/2026, sem login): formulário de agendamento com «10 (dez) dias de antecedência»; banca de qualificação com «pelo menos 3 (três) membros designados pelo aluno»; defesa com 3 (mestrado) ou 5 (doutorado); qualificação «até 60 dias antes da defesa» (30 por exceção); dissertação em «35 a 40 minutos», tese em «40 a 45 minutos», «seguida de discussão e arguição»; resultado «APROVADO ou REPROVADO»; quem não é aprovado na qualificação pode repetir em «60 (sessenta) dias».</figcaption></figure>
+      <div>
+        <div class="compare">
+          <div><div class="cmp-h">Qualificação</div><ul>
+            <li><strong>Objetivo:</strong> avaliar o projeto e a sua capacidade de executá-lo — o que já foi feito e o que falta, com cronograma</li>
+            <li><strong>Quando:</strong> antes da defesa; no PPG-UFC, até 60 dias antes (30 por exceção)</li>
+            <li><strong>Banca:</strong> no PPG-UFC, pelo menos 3 membros designados pelo aluno, mestrado e doutorado</li>
+            <li><strong>Resultado:</strong> no PPG-UFC, aprovado ou reprovado; reprovado repete em até 60 dias</li>
+          </ul></div>
+          <div><div class="cmp-h">Defesa</div><ul>
+            <li><strong>Objetivo:</strong> apresentar e discutir o trabalho de conclusão — a <span class="gterm" tabindex="0" data-t="Dissertação · tese" data-d="O trabalho de conclusão do mestrado e o do doutorado; a Resolução CNE/CES nº 7/2017 diz que os cursos se diferenciam pela «natureza do trabalho de conclusão».">dissertação</span> ou a tese — em sessão pública</li>
+            <li><strong>Quando:</strong> ao fim do curso, com o texto entregue à banca no prazo do regimento</li>
+            <li><strong>Banca:</strong> no PPG-UFC, mínimo 3 (mestrado) e 5 (doutorado); outros programas pedem 2 + 1 (UFSC), 4 (UENF) ou 3 a 5 (UFES) — slide seguinte</li>
+            <li><strong>Resultado:</strong> aprovado ou reprovado, muitas vezes com graus de correção e prazo (UFSC, UFSM, UENF)</li>
+          </ul></div>
+        </div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Na qualificação a banca quer ver que o caminho fecha: pergunta, método, o que já foi coletado e um cronograma até a defesa. Na defesa ela quer ver o caminho percorrido: resultados, discussão e limitações. O mesmo roteiro de apresentação serve aos dois (Parte 3): o bloco «Conclusão e próximos passos» vira cronograma na qualificação.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s07" data-title="Os regimentos variam: cinco exemplos">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>4 de 8 · páginas públicas dos cinco programas, lidas em 09/09/2026</span></div>
+    <h2 class="rv">Os regimentos variam: cinco programas lado a lado — tempo, banca, arguição, resultado e prazos</h2>
+    <div class="tw rv"><table><thead><tr><th style="width:200px">Programa (fonte pública)</th><th style="width:170px">Tempo de apresentação</th><th>Banca</th><th>Arguição</th><th>Resultado e prazos</th></tr></thead><tbody>
+      <tr><td><b>PPG em Ciências Médico-Cirúrgicas, UFC</b></td><td>Dissertação: 35 a 40 min; tese: 40 a 45 min</td><td>Defesa: mínimo 3 (mestrado) e 5 (doutorado), designados pelo aluno; qualificação: pelo menos 3</td><td>«Seguida de discussão e arguição com a <span class="gterm" tabindex="0" data-t="Banca examinadora (comissão examinadora)" data-d="Os doutores designados para avaliar e votar; a composição é do regimento (UFSC: 2 + 1 no mestrado; UFC: 3 ou 5; UENF: 4; UFES: 3 a 5, ímpar).">banca examinadora</span>»</td><td>APROVADO ou REPROVADO; agendamento com 10 dias; qualificação até 60 dias antes da defesa; reprovado na qualificação repete em 60 dias</td></tr>
+      <tr><td><b>PPG em Educação, UFSC</b></td><td>«Aproximadamente 30 minutos»</td><td>Mestrado: 2 titulares (ao menos 1 externo ao Programa) + 1 <span class="gterm" tabindex="0" data-t="Titular · suplente" data-d="Titular vota; suplente substitui um titular que falte — a UFSC, a UENF e a UFES exigem suplente.">suplente</span>; doutorado: 3 titulares (ao menos 2 externos à Universidade) + 1 <span class="gterm" tabindex="0" data-t="Titular · suplente" data-d="Titular vota; suplente substitui um titular que falte — a UFSC, a UENF e a UFES exigem suplente.">suplente</span>; além do orientador, que preside</td><td>«Aproximadamente 20 minutos» de perguntas por membro e 20 de respostas</td><td>Aprovada sem alterações; com modificações de aperfeiçoamento; com modificações substanciais; reprovado — versão final em 30, 60, 90 (mestrado) ou 120 (doutorado) dias</td></tr>
+      <tr><td><b>PPG em Engenharia Civil, UFSM</b></td><td>«Tempo máximo de 50 (cinquenta) minutos»</td><td><span class="gterm" tabindex="0" data-t="Banca examinadora (comissão examinadora)" data-d="Os doutores designados para avaliar e votar; a composição é do regimento (UFSC: 2 + 1 no mestrado; UFC: 3 ou 5; UENF: 4; UFES: 3 a 5, ímpar).">Comissão examinadora</span> com presidente; aprovação por maioria simples, voto de desempate do presidente em número par</td><td>Até 30 min por membro, com «no mínimo, igual tempo» de resposta; ou, «em comum acordo», diálogo de até 60 min por examinador</td><td>Resultado atribuído em local privado e divulgado; até 60 dias para as modificações e a entrega final; segunda reprovação = desligamento; nova defesa em até 6 meses</td></tr>
+      <tr><td><b>PPG em Engenharia e Ciência dos Materiais, UENF</b></td><td>Mestrado: máximo 40 min; doutorado: máximo 50 min; prorrogação a critério do presidente</td><td>Mínimo 4 membros (incluindo o orientador), todos doutores, pelo menos 1 externo à instituição; 1 suplente interno e 1 externo</td><td>«Sistema de diálogo entre examinadores e candidato»</td><td>APROVADO/REPROVADO ou condições (correções ou nova defesa em 3 a 6 meses); não cumprir o prazo = reprovação; «<span class="gterm" tabindex="0" data-t="Nada consta" data-d="Declaração de que o aluno não tem pendências; a UENF a exige em até 7 dias úteis antes da defesa.">nada consta</span>» em até 7 dias úteis</td></tr>
+      <tr><td><b>PPG em Direito, UFES</b></td><td>Não consta na página capturada</td><td>3 a 5 titulares, número ímpar, «paridade de gênero», orientador «membro e <span class="gterm" tabindex="0" data-t="Presidente da sessão" data-d="Quem instala os trabalhos, dá a palavra e conduz a deliberação; o orientador na UFSC e na UFES (com voto na UFES); desempata em número par na UFSM.">presidente da sessão</span> e tem direito a voto», ao menos 1 interno, externos preferencialmente de programa de pós-graduação, 1 suplente, todos doutores</td><td>Não consta na página capturada</td><td>Depósito com PDF (máx. 15 MB), declaração do orientador e dados da banca; «texto depositado não pode ser alterado»; alteração de banca com 72 h úteis; ata em até 2 dias, assinada na plataforma Asten</td></tr>
+    </tbody></table></div>
+    <div class="two rv">
+      <div class="rule-box"><span class="blabel">O que a tabela permite afirmar</span><p>Nos exemplos, o tempo de apresentação vai de cerca de 30 a 50 minutos; as bancas têm de 2 a 5 titulares com externos e suplente; a arguição é por membro, com resposta em tempo igual, ou em diálogo; o resultado é aprovado ou reprovado, com graus de correção e prazos de 30 a 120 dias. <strong>Nada além disso é generalizável</strong> — o seu programa pode estar fora de todas essas faixas.</p></div>
+      <div class="trap"><span class="blabel">Armadilha</span><p><strong>«No programa do meu colega são 40 minutos».</strong> São 40 no programa dele. Cada linha desta tabela foi lida numa página diferente, com regras diferentes, no mesmo dia. A única leitura que serve para você é a do seu regimento — e das instruções da secretaria, que às vezes acrescentam formulários e prazos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s08" data-title="Banca e resultados possíveis">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>5 de 8 · PPG em Educação, UFSC (ppge.ufsc.br) · UFSM · UENF · Vitae (Reino Unido) · captura de 09/09/2026</span></div>
+    <h2 class="rv">Banca e resultados possíveis: quem vota, o que «aprovado com modificações» significa e quanto tempo dá para corrigir</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_03_ufsc_defesa.jpg" width="1920" height="938" alt="Página Defesa de Dissertação e Tese do PPG em Educação da UFSC, com a seção Antes da defesa e a composição mínima da banca examinadora conforme a Resolução Normativa nº 95/CUn/2017"></div><figcaption><b>Figura 5</b> «Defesa de Dissertação e Tese», PPG em Educação da UFSC (captura de 09/09/2026, sem login): «Antes da defesa» — agendamento pelo orientador por formulário, histórico do sistema CAPG; «Composição mínima da banca examinadora (conforme a Resolução Normativa nº 95/CUn/2017 e o Regimento do PPGE)»: mestrado com «dois membros examinadores titulares, sendo ao menos um deles externo ao Programa e um suplente»; doutorado com três titulares, ao menos dois externos à Universidade, e um suplente.</figcaption></figure>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:170px">Resultado (exemplo)</th><th>O que significa</th><th style="width:170px">Prazo no exemplo</th></tr></thead><tbody>
+          <tr><td><b>Aprovada sem alterações</b> (UFSC)</td><td>O texto entregue é a versão final</td><td>30 dias para entregá-la</td></tr>
+          <tr><td><b>Com modificações de aperfeiçoamento</b> (UFSC)</td><td>Correções pontuais pedidas pela banca</td><td>60 dias</td></tr>
+          <tr><td><b>Com modificações substanciais</b> (UFSC)</td><td>Mudanças de conteúdo antes da versão final</td><td>90 (mestrado) ou 120 (doutorado) dias</td></tr>
+          <tr><td><b>Aprovado, com modificações a entregar</b> (UFSM)</td><td>Aprovação por maioria simples; entrega final depois das modificações</td><td>Até 60 dias</td></tr>
+          <tr><td><b>Condições</b> (UENF)</td><td>Correções ou nova defesa</td><td>3 a 6 meses; não cumprir = reprovação</td></tr>
+          <tr><td><b>Reprovado</b> (UFSM)</td><td>Nova defesa; segunda reprovação = desligamento</td><td>Em até 6 meses</td></tr>
+          <tr><td><b>Correções menores/maiores, resubmissão</b> (Vitae, Reino Unido)</td><td>«A maioria dos candidatos terá correções a fazer»; reprovação em casos extremos</td><td>Com prazo</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>«<span class="gterm" tabindex="0" data-t="Aprovado com modificações" data-d="Aprovação condicionada à entrega da versão final com as correções no prazo (UFSC: 60, 90 ou 120 dias conforme o grau; UFSM: até 60).">Aprovado com modificações</span>» é aprovação: o título depende de entregar a versão final com as correções <em>no prazo</em>. Descubra no seu regimento quantos dias são e o que acontece se passarem — na UENF, não cumprir o prazo é reprovação. E leia quem preside e quem vota: na UFSC e na UFES o orientador preside; na UFES ele vota; na UFSM o presidente desempata.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s09" data-title="Roteiro de uma sessão (UFSM)">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>6 de 8 · PPG em Engenharia Civil, UFSM (ufsm.br/cursos/pos-graduacao/santa-maria/ppgec) · captura de 09/09/2026</span></div>
+    <h2 class="rv">O roteiro de uma sessão: os itens 01 a 08 das instruções do PPGEC/UFSM — da instalação da comissão ao prazo da entrega final</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_05_ufsm_instrucoes.jpg" width="1920" height="938" alt="Página Instruções para a realização de defesa de Dissertação/Tese e Qualificação de Mestrado/Doutorado do PPGEC da UFSM, com as abas Defesa, Qualificação de Doutorado e Qualificação de Mestrado e os itens numerados do roteiro da sessão"></div><figcaption><b>Figura 6</b> «Instruções para a realização de defesa de Dissertação/Tese e Qualificação de Mestrado/Doutorado», PPGEC/UFSM (captura de 09/09/2026, sem login): abas «Defesa de Dissertação e Tese», «Qualificação de Doutorado» e «Qualificação de Mestrado»; o roteiro numerado segue o Regulamento Geral da Pós-Graduação Stricto Sensu da UFSM — 01 instalação dos trabalhos; 02 chamada do candidato e «tempo máximo de 50 (cinquenta) minutos»; 04 arguição «por até 30 (trinta) minutos» por membro; 05 diálogo «em comum acordo»; 06 resultado «em local privado». A numeração é a da página.</figcaption></figure>
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">01</span><span class="nt">Instalação</span><span class="nd">O presidente da <span class="gterm" tabindex="0" data-t="Banca examinadora (comissão examinadora)" data-d="Os doutores designados para avaliar e votar; a composição é do regimento (UFSC: 2 + 1 no mestrado; UFC: 3 ou 5; UENF: 4; UFES: 3 a 5, ímpar).">comissão examinadora</span> abre os trabalhos e apresenta os membros</span></div>
+          <div class="node"><span class="nn">02</span><span class="nt">Chamada e apresentação</span><span class="nd">Nome completo e título do trabalho; a palavra ao candidato, «tempo máximo de 50 (cinquenta) minutos»</span></div>
+          <div class="node"><span class="nn">04</span><span class="nt">Arguição por membro</span><span class="nd">Cada examinador «por até 30 (trinta) minutos»; o candidato tem «no mínimo, igual tempo» para responder</span></div>
+          <div class="node"><span class="nn">05</span><span class="nt">Ou diálogo</span><span class="nd">«Em comum acordo», arguição em forma de diálogo, computando «até 60 (sessenta) minutos» por examinador com a resposta</span></div>
+          <div class="node"><span class="nn">06</span><span class="nt">Resultado</span><span class="nd">Atribuído «em local privado» e depois divulgado ao discente e à comunidade; registrado na ata</span></div>
+          <div class="node"><span class="nn">07</span><span class="nt">Maioria simples</span><span class="nd">Aprovação por maioria; em número par, o presidente desempata</span></div>
+          <div class="node gate"><span class="nn">08</span><span class="nt">Prazo final</span><span class="nd">«Prazo de até 60 dias» para as modificações e a entrega final</span></div>
+        </div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Uma sessão tem partes que não são suas: a instalação, a deliberação em local privado e a leitura da ata. O que é seu é o tempo da apresentação e as respostas. Ensaie a apresentação para caber com folga no máximo do seu regimento (Parte 4) e prepare-se para a arguição mais longa que ele admite — na UFSM, até 60 minutos por examinador em diálogo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s10" data-title="Formatos e documentos">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>7 de 8 · UENF (uenf.br) · PPG em Direito, UFES (direito.ufes.br/pt-br/defesa-ppgdir) · UFC · UFSM · UFSC · capturas de 09/09/2026</span></div>
+    <h2 class="rv">Presencial, remoto ou híbrido — e os documentos que a secretaria pede: «nada consta», formulários, PDF, declaração, ata</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_06_uenf_procedimentos.jpg" width="1920" height="938" alt="Página Procedimentos para Defesa de Dissertação ou Tese do PPG em Engenharia e Ciência dos Materiais da UENF, com a seção A Defesa: banca de no mínimo 4 membros e sessão pública com apresentação em até 40 minutos"></div><figcaption><b>Figura 7</b> «Procedimentos para Defesa de Dissertação ou Tese», PPG em Engenharia e Ciência dos Materiais da UENF (captura de 09/09/2026, sem login): banca «de no mínimo 04 (quatro) membros (incluindo orientador)», todos doutores, com pelo menos um externo; sessão pública com apresentação de no máximo 40 minutos no mestrado. A página também exige o «nada consta» (em até 7 dias úteis) antes da defesa.</figcaption></figure>
+      <figure><div class="shot"><img src="capturas/df_07_ufes_defesa.jpg" width="1920" height="938" alt="Página Orientações para a defesa de dissertação do PPG em Direito da UFES, com os critérios para o depósito e a composição da banca examinadora: mínimo de 3 e máximo de 5 titulares, número ímpar e paridade de gênero"></div><figcaption><b>Figura 8</b> «Orientações para a defesa de dissertação», PPG em Direito da UFES (captura de 09/09/2026, sem login): critérios para deferir o depósito e a marcação; «Composição da Banca Examinadora» — mínimo 3 e máximo 5 titulares, «sempre de número ímpar», «paridade de gênero»; o orientador «é membro e presidente da sessão e tem direito a voto». O depósito leva PDF de até 15 MB, declaração do orientador e dados da banca; «texto depositado não pode ser alterado».</figcaption></figure>
+    </div>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:150px">Programa</th><th>Formato da sessão</th><th>Documentos e registros</th></tr></thead><tbody>
+        <tr><td><b>UFC</b> (Ciências Médico-Cirúrgicas)</td><td>Sessão pública em português; videoconferência ou híbrido só com membro em outro município ou impossibilidade</td><td>Formulário de agendamento em PDF com 10 dias; apresentação em <code>.pptx</code> em pendrive</td></tr>
+        <tr><td><b>UFSM</b> (Engenharia Civil)</td><td>Presencial, videoconferência ou híbrido, registrado na ata</td><td>Ata assinada por certificado digital, GOV.BR ou à mão (membros estrangeiros)</td></tr>
+        <tr><td><b>UENF</b> (Eng. e Ciência dos Materiais)</td><td>Sessão pública</td><td>«<span class="gterm" tabindex="0" data-t="Nada consta" data-d="Declaração de que o aluno não tem pendências; a UENF a exige em até 7 dias úteis antes da defesa.">Nada consta</span>» em até 7 dias úteis</td></tr>
+        <tr><td><b>UFES</b> (Direito)</td><td>—</td><td>Depósito: PDF (máx. 15 MB), declaração do orientador, dados da banca; alteração de banca com 72 h úteis; ata em até 2 dias na plataforma Asten</td></tr>
+        <tr><td><b>UFSC</b> (Educação)</td><td>—</td><td>Agendamento por formulário (planilha) no sistema CAPG, com o histórico escolar</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>A Resolução CNE/CES nº 7/2017 admite língua estrangeira (Art. 1º, §4º); o PPG-UFC exige a sessão em português. O formato remoto existe, mas com condições e registro em ata. Antes de marcar, liste o que a secretaria pede — «nada consta», formulário, PDF com limite de tamanho, declaração do orientador — e o prazo de cada item: é a coluna «Prazo do regimento» do checklist.</p></div>
+        <div class="note"><span class="blabel">Ata</span><p>A ata é o documento da sessão: registra o resultado, o formato (na UFSM) e as assinaturas. Na UFES ela é enviada em até 2 dias e assinada em plataforma. Você ouve a ata no fim — e é dela e do parecer que sai a lista de correções (Parte 5).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s11" data-title="A regra: ler o regimento primeiro">
+  <div class="inner">
+    <div class="kicker-part rv">O que a lei e o regimento decidem<span>8 de 8 · checklist_defesa.py · demonstração de 09/09/2026</span></div>
+    <h2 class="rv">A regra: ler o regimento primeiro — seis números para achar e a coluna «Prazo do regimento» do checklist para preencher</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:170px">O que procurar</th><th>Perguntas que o regimento responde</th><th style="width:230px">Nos exemplos</th></tr></thead><tbody>
+        <tr><td><b>1 Tempo de apresentação</b></td><td>Mínimo e máximo; mestrado e doutorado; prorrogação</td><td>30 (UFSC), 35–40 (UFC), até 40/50 (UENF), até 50 (UFSM)</td></tr>
+        <tr><td><b>2 Banca</b></td><td>Quantos titulares; externos ao programa ou à universidade; suplente; quem preside; quem vota; titulação</td><td>2 + 1 (UFSC, mestrado); 3 ou 5 (UFC); 4 (UENF); 3 a 5 ímpar (UFES)</td></tr>
+        <tr><td><b>3 Arguição</b></td><td>Por membro ou em diálogo; tempo de pergunta e de resposta</td><td>20 + 20 (UFSC); 30 + 30 ou diálogo de 60 (UFSM); diálogo (UENF)</td></tr>
+        <tr><td><b>4 Prazos</b></td><td>Agendamento; entrega do texto; qualificação antes da defesa; versão final por resultado</td><td>10 dias (UFC); 60 dias antes (UFC); 30/60/90/120 (UFSC); 60 (UFSM)</td></tr>
+        <tr><td><b>5 Formato</b></td><td>Presencial, videoconferência, híbrido; condições; o que a ata registra</td><td>Condições (UFC); registrado na ata (UFSM)</td></tr>
+        <tr><td><b>6 Documentos</b></td><td>«Nada consta», formulários, PDF e tamanho, declaração do orientador, formato dos slides</td><td>7 dias úteis (UENF); PDF ≤ 15 MB (UFES); <code>.pptx</code> em pendrive (UFC)</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="code"><div class="code-head">terminal — o checklist com a coluna a preencher (saída real na Figura 18)</div><pre>python3 scripts/checklist_defesa.py --data 2026-11-20 --tipo defesa --saida 07_banca/CHECKLIST_DEFESA.md
+# gravado: 07_banca/CHECKLIST_DEFESA.md (15 itens)
+# | Quando (sugerido) | Prazo do regimento | O quê | Evidência | Feito |
+# | 2026-08-22 (-90 d) | [conferir] | Confirmar no regimento: prazos, composição da banca, tempo de apresentação e arguição, formato … |</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>O primeiro item do checklist, 90 dias antes, é «confirmar no regimento» — e a evidência é a página do regimento salva em <code>07_banca/</code>. Cada linha seguinte tem a coluna «Prazo do regimento» com «[conferir]»: troque pelo prazo real do seu programa antes de marcar qualquer coisa como feita. Se o regimento e a secretaria discordarem, pergunte por escrito e guarde a resposta.</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>«Ouvi dizer que são 40 minutos».</strong> Dos cinco exemplos, nenhum diz exatamente isso para todos os casos. O ouvir dizer custa a apresentação inteira; ler o regimento custa uma hora.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTE 2 ===================== -->
+<section class="slide divider" id="s12" data-title="Parte 2 · O texto antes da banca"><div class="inner"><div class="kicker-part rv">Parte 2<span>O texto antes da banca</span></div><h2 class="rv">O que a banca lê e o que procura; números conferidos, citações e referências verificadas; limitações ditas por você; onde as dissertações ficam</h2><p class="rv">A banca lê o texto antes de ouvir a apresentação — e no PPG em Direito da UFES o texto depositado «não pode ser alterado». Quatro slides sobre o que fechar antes de entregar: cada número, cada citação, cada limitação, e a leitura de defesas já aprovadas na sua área.</p></div><div class="num">02</div></section>
+
+<section class="slide" id="s13" data-title="O que a banca lê e o que procura">
+  <div class="inner">
+    <div class="kicker-part rv">O texto antes da banca<span>1 de 4 · Vitae (Reino Unido), «The viva» · captura de 09/09/2026</span></div>
+    <h2 class="rv">O que a banca lê e o que procura: no Brasil a sessão é pública; no Reino Unido, a <em>viva</em> é privada — e a preparação recomendada é a mesma</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_15_vitae_viva.jpg" width="1920" height="938" alt="Página The viva da Vitae, com o sumário The viva, Viva Preparation Checklist, The format for a viva e Top tips for handling the viva discussion"></div><figcaption><b>Figura 9</b> «The viva», Vitae, Reino Unido (captura de 09/09/2026, sem login): «guidance on how to successfully navigate your viva examination», com «Viva Preparation Checklist», «The format for a viva» e «Top tips for handling the viva discussion». O checklist inclui «I have had a mock viva with my main supervisor», «I have investigated the backgrounds and publications of my examiners» e «I have produced a list of likely questions that could be asked» — e a recomendação de seguir trabalhando com a tese depois de submetê-la.</figcaption></figure>
+      <div>
+        <div class="compare">
+          <div><div class="cmp-h">Brasil (regimentos da Parte 1)</div><ul>
+            <li>Sessão pública: exposição oral seguida de arguição (UFC, UFSC, UFSM, UENF)</li>
+            <li>Banca de 2 a 5 titulares com externos e suplente; o orientador preside em alguns programas (UFSC, UFES)</li>
+            <li>Arguição por membro com resposta em tempo igual, ou em diálogo</li>
+            <li>Resultado deliberado em local privado (UFSM) e lido na ata</li>
+          </ul></div>
+          <div><div class="cmp-h">Reino Unido (Vitae)</div><ul>
+            <li>A <em><span class="gterm" tabindex="0" data-t="Viva · mock viva" data-d="No Reino Unido (Vitae), o exame oral, em sala privada com ao menos dois examinadores; a mock viva é o ensaio com o orientador — a banca simulada deste manual.">viva</span></em> costuma ser em sala privada, com ao menos dois examinadores, um deles externo</li>
+            <li>Em outros países, a Vitae registra a defesa pública com exposição seguida de discussão — o modelo brasileiro</li>
+            <li>Preparação: <em><span class="gterm" tabindex="0" data-t="Viva · mock viva" data-d="No Reino Unido (Vitae), o exame oral, em sala privada com ao menos dois examinadores; a mock viva é o ensaio com o orientador — a banca simulada deste manual.">mock viva</span></em> com o orientador, estudar os examinadores e suas publicações, lista de perguntas prováveis</li>
+            <li>«A maioria dos candidatos terá correções a fazer», com prazo</li>
+          </ul></div>
+        </div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>A banca lê o texto com três perguntas: a pergunta de pesquisa está clara e respondida? O método sustenta os resultados? O que o autor sabe que não fez? Os três itens da Vitae respondem a isso antes da sessão: a banca simulada (Parte 4) é a <em><span class="gterm" tabindex="0" data-t="Viva · mock viva" data-d="No Reino Unido (Vitae), o exame oral, em sala privada com ao menos dois examinadores; a mock viva é o ensaio com o orientador — a banca simulada deste manual.">mock viva</span></em>; conhecer o que cada membro publicou diz de onde virão as perguntas; a lista de perguntas prováveis por seção (slide «Perguntas prováveis») é a sua.</p></div>
+        <div class="note"><span class="blabel">Continuar com o texto</span><p>Entre a entrega e a sessão passam semanas (30 dias no exemplo do checklist). A Vitae recomenda seguir trabalhando com a tese nesse período: reler, anotar os números-chave, marcar as páginas que a banca vai abrir.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s14" data-title="Números conferidos, citações e referências verificadas">
+  <div class="inner">
+    <div class="kicker-part rv">O texto antes da banca<span>2 de 4 · checklist_defesa.py (item −60 dias) · manuais irmãos</span></div>
+    <h2 class="rv">Números conferidos, citações e referências verificadas: o item «texto completo revisado» do checklist, 60 dias antes</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:230px">O que conferir</th><th>Como</th><th style="width:210px">Manual irmão</th></tr></thead><tbody>
+        <tr><td><b>Cada número do texto</b></td><td>O mesmo valor na tabela, na figura, no resumo e no slide; o número que você vai ler em voz alta é o do texto</td><td><a href="https://dados.mirandastech.com.br/">Dados</a> (figura por script, tabela gerada, não digitada)</td></tr>
+        <tr><td><b>Cada citação tem referência, e cada referência é citada</b></td><td>A evidência do checklist: <code>verificar_citacoes.py</code> e <code>verificar_refs.py</code> sem erro</td><td><a href="https://zotero.mirandastech.com.br/">Zotero</a> · <a href="https://latex.mirandastech.com.br/">LaTeX</a></td></tr>
+        <tr><td><b>Referências completas no padrão do programa</b></td><td>Estilo ABNT ou o que o regimento exigir, gerado da biblioteca, não à mão</td><td><a href="https://zotero.mirandastech.com.br/">Zotero</a></td></tr>
+        <tr><td><b>A busca da revisão é reproduzível</b></td><td>Diário de busca, bases, datas, critérios e fluxograma — a banca pergunta «por que esses artigos e não outros»</td><td><a href="https://busca.mirandastech.com.br/">Busca</a> · <a href="https://prisma.mirandastech.com.br/">PRISMA</a></td></tr>
+        <tr><td><b>Dados e código localizáveis</b></td><td>Repositório com versão marcada (tag) da entrega; DOI quando o programa prevê</td><td><a href="https://git.mirandastech.com.br/">Git</a> · <a href="https://cienciaaberta.mirandastech.com.br/">Ciência aberta</a></td></tr>
+        <tr><td><b>Uso de IA declarado</b></td><td>Onde e como o assistente foi usado, no texto e no repositório</td><td><a href="https://manual.mirandastech.com.br/">Uso de IA</a></td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="code"><div class="code-head">07_banca/CHECKLIST_DEFESA.md — a linha de −60 dias, como o script a grava</div><pre>| 2026-09-21 (-60 d) | [conferir] | Texto completo revisado (citações e referências
+  verificadas; números batem com as tabelas); banca sugerida ao orientador
+  | verificar_citacoes.py e verificar_refs.py sem erro | [ ] |</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>O texto entregue é o que a banca lê — e, no PPG em Direito da UFES, «texto depositado não pode ser alterado». Feche números, citações e referências <em>antes</em> de entregar; o que aparecer depois vai para a lista de correções, não para o PDF já depositado. A banca sugerida ao orientador entra no mesmo item, porque os nomes precisam de aprovação e agenda (item −45 dias).</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>Número diferente no texto e no slide.</strong> É a pergunta mais fácil de fazer e a mais difícil de responder: «na página tal o texto traz um valor e o slide traz outro — qual vale?». O slide sai da mesma tabela que o texto (Parte 3).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s15" data-title="Limitações ditas por você">
+  <div class="inner">
+    <div class="kicker-part rv">O texto antes da banca<span>3 de 4 · roteiro do apresentacao_defesa.py, bloco «Discussão e limites» · Vitae</span></div>
+    <h2 class="rv">Limitações ditas por você: o que a banca vai apontar de qualquer jeito fica melhor escrito no seu texto e dito no seu slide</h2>
+    <div class="two rv">
+      <div>
+        <div class="compare">
+          <div><div class="cmp-h">Limitação escondida</div><ul>
+            <li>A banca a encontra sozinha e pergunta por que não está no texto</li>
+            <li>A resposta improvisada soa como defesa do indefensável</li>
+            <li>Vira correção «substancial» na ata, com prazo maior (UFSC: 90 ou 120 dias)</li>
+            <li>Passa a impressão de que há outras</li>
+          </ul></div>
+          <div><div class="cmp-h">Limitação declarada</div><ul>
+            <li>Está na seção de discussão, com o que ela afeta e o que não afeta</li>
+            <li>Aparece no bloco «Discussão e limites» da apresentação, antes das perguntas</li>
+            <li>A resposta já existe: conceder, defender com o dado, apontar o que muda</li>
+            <li>Mostra que você conhece o próprio método — o que a banca avalia</li>
+          </ul></div>
+        </div>
+        <div class="code"><div class="code-head">a nota do apresentador que o apresentacao_defesa.py grava no frame «Discussão e limites»</div><pre>\note{O que os resultados dizem frente à literatura; limitações ditas
+      por você antes que a banca diga.}</pre></div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:190px">Tipo de limitação</th><th>Como escrever (e dizer)</th></tr></thead><tbody>
+          <tr><td><b>Amostra, corpus ou período</b></td><td>O que ficou de fora, por quê, e a que população ou contexto os resultados se aplicam</td></tr>
+          <tr><td><b>Instrumento ou medida</b></td><td>O que o instrumento captura e o que não captura; validação feita ou não feita</td></tr>
+          <tr><td><b>Desenho</b></td><td>O que o desenho permite concluir (associação, não causa; descrição, não generalização)</td></tr>
+          <tr><td><b>Análise</b></td><td>Pressupostos assumidos; o que uma análise alternativa mudaria</td></tr>
+          <tr><td><b>Busca da revisão</b></td><td>Bases e idiomas cobertos; o que uma base a mais poderia acrescentar</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Uma limitação declarada não é uma desculpa: diga o que ela afeta, o que não afeta e o que faria diferente. Nunca prometa o que não fez («isso será corrigido»): diga o que está no texto e o que entraria numa próxima etapa. A Vitae registra que a maioria dos candidatos terá correções — a limitação escrita por você costuma virar correção menor, não maior.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s16" data-title="Onde as dissertações ficam: BDTD e Catálogo CAPES">
+  <div class="inner">
+    <div class="kicker-part rv">O texto antes da banca<span>4 de 4 · bdtd.ibict.br · catalogodeteses.capes.gov.br · capturas de 09/09/2026</span></div>
+    <h2 class="rv">Onde as dissertações ficam — BDTD e Catálogo de Teses da CAPES — e por que ler três defesas aprovadas na sua área antes da sua</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_18_bdtd.jpg" width="1920" height="938" alt="Página inicial da Biblioteca Digital Brasileira de Teses e Dissertações, com os contadores 175 instituições, 835.223 dissertações, 337.348 teses e 1.172.571 documentos e a caixa de busca"></div><figcaption><b>Figura 10</b> BDTD/IBICT, «Acesso e visibilidade às teses e dissertações brasileiras» (captura de 09/09/2026, sem login): 175 instituições, 835.223 dissertações, 337.348 teses, 1.172.571 documentos; busca simples e avançada. É para cá que a sua versão final vai depois do depósito na biblioteca da instituição.</figcaption></figure>
+      <figure><div class="shot"><img src="capturas/df_20_capes_catalogo_teses.jpg" width="1920" height="938" alt="Página de busca do Catálogo de Teses e Dissertações da CAPES, com o campo Inserir termo e o botão Buscar"></div><figcaption><b>Figura 11</b> Catálogo de Teses e Dissertações da CAPES (captura de 09/09/2026, sem login): busca pública por termo, com o «Painel de informações quantitativas (teses e dissertações)». Aqui ficam os trabalhos informados pelos programas à CAPES.</figcaption></figure>
+    </div>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:250px">O que ler em três defesas aprovadas</th><th>Por quê</th></tr></thead><tbody>
+        <tr><td><b>Do seu programa, nos últimos anos</b></td><td>Mostram o tamanho, a estrutura e o nível de detalhe que a banca do seu programa aprovou</td></tr>
+        <tr><td><b>A seção de limitações e a conclusão</b></td><td>Como quem foi aprovado escreveu o que não fez e o que propôs — o modelo para o slide «Limitações ditas por você»</td></tr>
+        <tr><td><b>A folha de aprovação e a ficha</b></td><td>Quantos membros assinaram, de onde vieram — a composição que o regimento descreve, vista na prática</td></tr>
+        <tr><td><b>O resumo</b></td><td>Pergunta, método, resultado e conclusão em poucas linhas: o que a sua abertura (10 % do tempo; 4 minutos no exemplo de 40) precisa dizer</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Leia como banca, não como autor: a cada capítulo, escreva a pergunta que faria. Você vai reconhecer nessas perguntas as que a sua banca fará — e vai ver como o texto aprovado as antecipou. Guarde as três referências: se o seu programa tem um padrão de estrutura, é neles que ele está.</p></div>
+        <div class="note"><span class="blabel">Depois da sua defesa</span><p>A versão final corrigida, depositada na biblioteca ou no repositório institucional (Parte 5), é a que aparece na <span class="gterm" tabindex="0" data-t="BDTD" data-d="Biblioteca Digital Brasileira de Teses e Dissertações, do IBICT: 175 instituições e 1.172.571 documentos em 09/09/2026.">BDTD</span> e no Catálogo — com o seu nome, por tempo indeterminado. Mais um motivo para fechar números e referências antes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTE 3 ===================== -->
+<section class="slide divider" id="s17" data-title="Parte 3 · A apresentação"><div class="inner"><div class="kicker-part rv">Parte 3<span>A apresentação</span></div><h2 class="rv">Roteiro por bloco com tempo; <code>apresentacao_defesa.py</code> e o Beamer compilado; Beamer, Impress e Apresentações Google; o formato que o regimento pede; regras de slide; limitações, conclusão e referências</h2><p class="rv">A apresentação nasce do tempo do regimento, não do número de slides: sete blocos em proporções fixas, um <span class="gterm" tabindex="0" data-t="Frame" data-d="A unidade de conteúdo do Beamer (\begin{frame}…\end{frame}); um frame pode gerar vários slides com \pause ou \item&lt;2-&gt;.">frame</span> por bloco com o tempo previsto no rodapé, um resultado por slide. O esqueleto foi gerado e compilado de verdade em 09/09/2026 (11 páginas), com pasta e autora fictícias.</p></div><div class="num">03</div></section>
+
+<section class="slide" id="s18" data-title="Roteiro por bloco com tempo">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>1 de 8 · roteiro fixo do apresentacao_defesa.py · exemplo real de 40 min (Figura 12)</span></div>
+    <h2 class="rv">Roteiro por bloco com tempo: sete blocos em proporções fixas (10/15/5/20/30/10/10 %) — e o que dizer em cada um</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:230px">Bloco</th><th style="width:60px">%</th><th style="width:110px">40 min (real)</th><th>O que dizer (a nota do apresentador gravada no frame)</th></tr></thead><tbody>
+        <tr><td><b>1 Abertura e pergunta de pesquisa</b></td><td>10</td><td>4,0 min</td><td>Quem sou, título, a pergunta em uma frase e por que ela importa</td></tr>
+        <tr><td><b>2 Contexto e lacuna</b></td><td>15</td><td>6,0 min</td><td>O que já se sabe (3 a 5 referências-chave), o que falta, a lacuna que este trabalho preenche</td></tr>
+        <tr><td><b>3 Objetivos</b></td><td>5</td><td>2,0 min</td><td>Objetivo geral e específicos, na mesma ordem em que os resultados aparecerão</td></tr>
+        <tr><td><b>4 Método</b></td><td>20</td><td>8,0 min</td><td>Desenho, participantes/amostra ou corpus, instrumentos, procedimentos, análise; ética (CEP/CAAE) e pré-registro se houver</td></tr>
+        <tr><td><b>5 Resultados</b></td><td>30</td><td>12,0 min</td><td>Um resultado por slide: tabela ou figura, n, efeito e IC; o número lido em voz alta é o mesmo do texto</td></tr>
+        <tr><td><b>6 Discussão e limites</b></td><td>10</td><td>4,0 min</td><td>O que os resultados dizem frente à literatura; limitações ditas por você antes que a banca diga</td></tr>
+        <tr><td><b>7 Conclusão e próximos passos</b></td><td>10</td><td>4,0 min</td><td>Resposta à pergunta, contribuições, o que falta (na qualificação: cronograma até a defesa)</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Os resultados levam 30 % do tempo porque são o que a banca veio ouvir; o método, 20 %, porque é o que ela vai arguir. O total é o tempo do <em>seu</em> regimento — a demonstração usou 40 minutos porque é uma faixa que aparece nos exemplos (35 a 40 na UFC; máximo 40 no mestrado da UENF); para 30 ou 50, o script recalcula com <code>--minutos</code>. Cada <span class="gterm" tabindex="0" data-t="Frame" data-d="A unidade de conteúdo do Beamer (\begin{frame}…\end{frame}); um frame pode gerar vários slides com \pause ou \item&lt;2-&gt;.">frame</span> mostra «previsto: x min (acumulado y min)» no rodapé: é o seu relógio durante o ensaio.</p></div>
+        <div class="note"><span class="blabel">Na qualificação</span><p>O mesmo roteiro, com <code>--tipo qualificacao</code>: o bloco 5 traz os resultados parciais ou o piloto; o bloco 7 vira o cronograma até a defesa. A banca da qualificação quer ver que o caminho fecha (Parte 1).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s19" data-title="apresentacao_defesa.py">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>2 de 8 · demonstração de 09/09/2026 · Python 3, só biblioteca padrão · latexmk opcional</span></div>
+    <h2 class="rv"><code>apresentacao_defesa.py</code>: o roteiro vira um <code>.tex</code> em Beamer com um frame por bloco, o tempo no rodapé e a nota do apresentador — compilado se houver LaTeX</h2>
+    <figure class="rv"><div class="shot"><img src="capturas/df_t1_apresentacao_beamer.jpg" width="1920" height="767" alt="Terminal: python3 scripts/apresentacao_defesa.py com título, autora, orientador, programa e instituição fictícios, tipo defesa, 40 minutos e seis capítulos; a saída lista os sete blocos com os minutos, ok: apresentacao.pdf (11 páginas), e o sed mostra as doze primeiras linhas do apresentacao.tex"></div><figcaption><b>Figura 12</b> A sessão de 09/09/2026 (execução real; pasta e autora fictícias): o script grava <code>07_banca/apresentacao/apresentacao.tex</code> — «7 blocos para 40 min (Defesa)» — imprime a tabela de tempos (4,0 · 6,0 · 2,0 · 8,0 · 12,0 · 4,0 · 4,0 min), compila com <code>latexmk</code> e responde «ok: … apresentacao.pdf (11 páginas)»; o <code>sed</code> mostra o cabeçalho do <code>.tex</code>: <code>\documentclass[aspectratio=169,11pt]{beamer}</code>, <code>\usetheme{Boadilla}</code>, babel brazilian, sem símbolos de navegação, número de frame no rodapé.</figcaption></figure>
+    <div class="two rv">
+      <div>
+        <div class="code"><div class="code-head">terminal — o comando da demonstração (Figura 12)</div><pre>python3 scripts/apresentacao_defesa.py 07_banca/apresentacao \
+    --titulo "Manutenção preditiva em guindastes portuários: monitoramento por sensores e decisão de parada" \
+    --autor "Aluna Exemplo" --orientador "Prof. Exemplo" \
+    --programa "Programa de Pós-Graduação em Engenharia" --instituicao "Universidade Exemplo" \
+    --tipo defesa --minutos 40 \
+    --capitulos "Introdução;Revisão;Método;Resultados;Discussão;Conclusão" --compilar</pre></div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:230px">Argumento</th><th>Uso</th></tr></thead><tbody>
+          <tr><td><code>&lt;pasta&gt;</code> · <code>--titulo</code> · <code>--autor</code></td><td>Obrigatórios; a pasta é criada se não existir</td></tr>
+          <tr><td><code>--orientador</code> · <code>--programa</code> · <code>--instituicao</code></td><td>Opcionais; vão para a capa (<code>\author</code>, <code>\subtitle</code>, <code>\institute</code>)</td></tr>
+          <tr><td><code>--tipo qualificacao|defesa</code> · <code>--minutos N</code></td><td>O subtítulo («Exame de qualificação» ou «Defesa») e o tempo total que as proporções dividem</td></tr>
+          <tr><td><code>--capitulos "…;…"</code></td><td>Acrescenta o frame «Estrutura do trabalho» (sumário) com uma seção por capítulo</td></tr>
+          <tr><td><code>--compilar</code></td><td>Roda <code>latexmk -pdf</code> se existir; senão avisa: «abra apresentacao.tex no <span class="gterm" tabindex="0" data-t="Overleaf" data-d="Editor LaTeX on-line; compila o apresentacao.tex no plano gratuito.">Overleaf</span> ou instale o <span class="gterm" tabindex="0" data-t="latexmk · TinyTeX · tlmgr" data-d="O compilador em cadeia usado pelo --compilar; a distribuição LaTeX mínima da demonstração; o gerenciador que instalou beamer, pgf e translator.">TinyTeX</span>»</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>O script entrega o esqueleto: cada frame tem «[preencher]» e a nota do que dizer. Quem preenche com os resultados reais é você — com o número do texto e a figura gerada por script. O <code>.tex</code> é texto: entra no Git e se compila no <span class="gterm" tabindex="0" data-t="Overleaf" data-d="Editor LaTeX on-line; compila o apresentacao.tex no plano gratuito.">Overleaf</span> sem instalar nada.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s20" data-title="O Beamer compilado">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>3 de 8 · demonstração de 09/09/2026 · TinyTeX + tlmgr install beamer pgf translator · latexmk</span></div>
+    <h2 class="rv">O Beamer compilado: 11 páginas, capa, um frame por bloco com «previsto: 4.0 min (acumulado 4 min)» no rodapé e o sumário com os seis capítulos</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_b1_beamer_paginas.jpg" width="1920" height="1106" alt="Quatro páginas do PDF compilado: a capa com título, Defesa — Programa de Pós-Graduação em Engenharia, Aluna Exemplo, Orientação: Prof. Exemplo, Universidade Exemplo e a data; o frame Abertura e pergunta de pesquisa com [preencher] e o rodapé previsto: 4.0 min (acumulado 4 min); o frame Estrutura do trabalho com seis capítulos numerados; o frame Contexto e lacuna com previsto: 6.0 min (acumulado 10 min)"></div><figcaption><b>Figura 13</b> Quatro das 11 páginas de <code>apresentacao.pdf</code> (execução real; pasta e autora fictícias): a capa (título, «Defesa — Programa de Pós-Graduação em Engenharia», «Aluna Exemplo», «Orientação: Prof. Exemplo», «Universidade Exemplo», 9 de setembro de 2026); «Abertura e pergunta de pesquisa» com o rodapé «previsto: 4.0 min (acumulado 4 min)»; «Estrutura do trabalho» com os seis capítulos; «Contexto e lacuna» com «previsto: 6.0 min (acumulado 10 min)». Tema Boadilla, 16:9, número da página no rodapé.</figcaption></figure>
+      <div>
+        <div class="code"><div class="code-head">apresentacao.tex — um frame como o script o grava (escrito por você depois)</div><pre>\begin{frame}{Abertura e pergunta de pesquisa}
+  \begin{itemize}
+    \item [preencher]
+  \end{itemize}
+  \vfill\hfill{\tiny previsto: 4.0 min (acumulado 4 min)}
+  \note{Quem sou, título, a pergunta em uma frase e por que ela importa.}
+\end{frame}</pre></div>
+        <div class="tw"><table><thead><tr><th style="width:170px">Página</th><th>O que é</th></tr></thead><tbody>
+          <tr><td><b>1</b> capa</td><td><code>\frame{\titlepage}</code>: título, subtítulo com o tipo e o programa, autora, orientação, instituição, data</td></tr>
+          <tr><td><b>2 a 9</b> blocos e sumário</td><td>Um frame por bloco do roteiro; «Estrutura do trabalho» (<code>\tableofcontents</code>) logo depois da abertura</td></tr>
+          <tr><td><b>10</b> referências</td><td>«[as referências citadas nos slides, no padrão do trabalho]»</td></tr>
+          <tr><td><b>11</b> encerramento</td><td>«Obrigado. Perguntas da banca.»</td></tr>
+        </tbody></table></div>
+        <div class="note"><span class="blabel">Frame</span><p>No Beamer, <em>frame</em> é a unidade de conteúdo (<code>\begin{frame}…\end{frame}</code>); um frame pode gerar mais de um slide (página do PDF) quando usa efeitos de revelação (<code>\pause</code>, <code>\item&lt;2-&gt;</code>). Sem efeitos, como aqui, um frame é uma página. A nota (<code>\note{}</code>) não aparece no PDF: é o seu roteiro falado.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s21" data-title="Beamer: o que é e versão">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>4 de 8 · ctan.org/pkg/beamer · captura de 09/09/2026</span></div>
+    <h2 class="rv">Beamer: a classe LaTeX para apresentações — versão 3.78, licenças livres, incluída no TeX Live e no MiKTeX</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_11_ctan_beamer.jpg" width="1920" height="938" alt="Página do pacote beamer no CTAN: A LaTeX class for producing presentations and slides, versão 3.78 de 2026-08-20, licenças LPPL 1.3c, FDL e GPL v2 ou posterior, mantenedores samcarter e Joseph Wright"></div><figcaption><b>Figura 14</b> ctan.org/pkg/beamer (captura de 09/09/2026, sem login): «Beamer — A LaTeX class for producing presentations and slides»; o conteúdo vai no ambiente <em>frame</em>, e «cada frame pode ser composto de vários slides»; versão 3.78 (2026-08-20); licenças LPPL 1.3c, Free Documentation License e GPL v2 ou posterior; mantenedores samcarter e Joseph Wright; depende de pgf, hyperref, translator e outros; documentação em <code>beameruserguide.pdf</code>.</figcaption></figure>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:170px">Item</th><th>O que o CTAN diz (09/09/2026)</th></tr></thead><tbody>
+          <tr><td><b>O que é</b></td><td>Classe LaTeX para produzir apresentações e slides; usa o sistema gráfico pgf para efeitos visuais</td></tr>
+          <tr><td><b>Versão</b></td><td>3.78, de 20/08/2026</td></tr>
+          <tr><td><b>Licenças</b></td><td>LPPL 1.3c, GPL v2 ou posterior, FDL</td></tr>
+          <tr><td><b>Depende de</b></td><td>pgf, hyperref, translator, entre outros</td></tr>
+          <tr><td><b>Onde vem</b></td><td>Incluído no TeX Live e no MiKTeX; na demonstração, <span class="gterm" tabindex="0" data-t="latexmk · TinyTeX · tlmgr" data-d="O compilador em cadeia usado pelo --compilar; a distribuição LaTeX mínima da demonstração; o gerenciador que instalou beamer, pgf e translator.">TinyTeX</span> + <code>tlmgr install beamer pgf translator</code></td></tr>
+          <tr><td><b>Documentação</b></td><td><code>beameruserguide.pdf</code> (não capturado neste manual)</td></tr>
+        </tbody></table></div>
+        <div class="code"><div class="code-head">terminal — o que a demonstração instalou antes de compilar (TinyTeX já presente)</div><pre>tlmgr install beamer pgf translator
+latexmk -pdf -f -interaction=nonstopmode apresentacao.tex   # o que o --compilar roda</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>O Beamer é a escolha da demonstração porque é texto, versiona no Git e compila no Overleaf sem instalar nada — não porque seja «melhor» que o PowerPoint ou o Impress. Se o regimento pede <code>.pptx</code> em pendrive (PPG-UFC), o Beamer não entrega isso: use a ferramenta que entrega o formato pedido, ou leve os dois (slide «Impress e Apresentações Google»).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s22" data-title="Beamer no Overleaf: exemplo mínimo">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>5 de 8 · overleaf.com/learn «Beamer» · captura de 09/09/2026</span></div>
+    <h2 class="rv">Beamer no Overleaf: o exemplo mínimo — título, autor e um frame — e os comandos de tema, destaque e revelação</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_12_overleaf_beamer.jpg" width="1920" height="938" alt="Página Beamer do Overleaf Learn, com o sumário: Introduction, Beamer main features (title page, table of contents, effects), Highlighting important sentences/words, Customizing your presentation (themes and colorthemes, fonts, columns), Reference guide"></div><figcaption><b>Figura 15</b> Overleaf Learn, «Beamer» (captura de 09/09/2026, sem login): «a powerful and flexible LaTeX class to create great looking presentations»; sumário com a capa, o sumário, os efeitos, o destaque de frases, temas e temas de cor (Berkeley, Copenhagen), fontes e colunas. O exemplo mínimo da página é o do bloco ao lado.</figcaption></figure>
+      <div>
+        <div class="code"><div class="code-head">apresentacao-minima.tex — o exemplo mínimo do Overleaf, com um frame (compila no Overleaf gratuito)</div><pre>\documentclass{beamer}
+\usetheme{Madrid}          % ou Berlin, Copenhagen…
+\title{Título do trabalho}
+\author{Aluna Exemplo}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Primeiro resultado}
+  \begin{itemize}
+    \item Um resultado por slide
+    \item&lt;2-&gt; Aparece no segundo passo (o frame gera dois slides)
+  \end{itemize}
+  \pause
+  \alert{O número que está no texto}
+\end{frame}
+\end{document}</pre></div>
+        <div class="tw"><table><thead><tr><th style="width:230px">Comando</th><th>O que faz</th></tr></thead><tbody>
+          <tr><td><code>\usetheme{Madrid}</code> · <code>\usecolortheme</code> · <code>\usefonttheme</code></td><td><span class="gterm" tabindex="0" data-t="Tema (Beamer)" data-d="O conjunto de layout, cores e fontes (\usetheme{Madrid}, Boadilla na demonstração; Berlin, Copenhagen).">Tema</span>, cores e fontes; a demonstração usou Boadilla</td></tr>
+          <tr><td><code>\alert{}</code> · <code>block</code>/<code>alertblock</code>/<code>examples</code></td><td>Destaque de uma palavra; caixas com título</td></tr>
+          <tr><td><code>\pause</code> · <code>\item&lt;2-&gt;</code></td><td>Revelação por passos: um frame vira vários slides — conte-os no tempo do ensaio</td></tr>
+        </tbody></table></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s23" data-title="Impress e Apresentações Google; o formato que o regimento pede">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>6 de 8 · libreoffice.org · workspace.google.com/products/slides · capturas de 09/09/2026</span></div>
+    <h2 class="rv">LibreOffice Impress e Apresentações Google — e o formato que o regimento pede: PDF sempre, mais o que a secretaria exigir</h2>
+    <div class="two rv">
+      <figure><div class="shot"><img src="capturas/df_13_libreoffice_impress.jpg" width="1920" height="938" alt="Página da LibreOffice com o título One suite. Six tools. e as capturas do Writer e do Calc; o Impress é uma das seis ferramentas da suíte"></div><figcaption><b>Figura 16</b> libreoffice.org (captura de 09/09/2026, sem login): «One suite. Six tools.» — a suíte da The Document Foundation inclui o Impress, apresentado como «Create engaging, multimedia presentations with ease and speed». A página não detalha modo apresentador nem exportação; o LibreOffice 25.2 local exporta PDF pelo menu Arquivo (conferido no manual de Análise de dados como conversão <em>headless</em>).</figcaption></figure>
+      <figure><div class="shot"><img src="capturas/df_14_google_slides.jpg" width="1920" height="938" alt="Página do Google Slides no Google Workspace: Crie apresentações incríveis em equipe; Crie e entregue apresentações impactantes no seu navegador, de qualquer lugar. Não é necessário instalar nada; botão Fazer login"></div><figcaption><b>Figura 17</b> Apresentações Google, workspace.google.com/products/slides (captura de 09/09/2026, sem login): «Crie apresentações incríveis em equipe»; «Crie e entregue apresentações impactantes no seu navegador, de qualquer lugar. Não é necessário instalar nada»; promove o Gemini; exige conta Google.</figcaption></figure>
+    </div>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:170px">Ferramenta</th><th>Custo · conta</th><th>O que este manual conferiu</th></tr></thead><tbody>
+        <tr><td><b>Beamer</b></td><td>Gratuito (LPPL, GPL, FDL); sem conta; Overleaf gratuito para compilar on-line</td><td>Compilado de verdade (Figuras 12 e 13); saída em PDF</td></tr>
+        <tr><td><b>LibreOffice Impress</b></td><td>Gratuito; sem conta</td><td>A página da suíte; exportação para PDF no 25.2 local</td></tr>
+        <tr><td><b>Apresentações Google</b></td><td>No navegador, sem instalar; exige conta Google</td><td>Só a página pública — nenhuma apresentação foi criada (sem login)</td></tr>
+        <tr><td><b>PowerPoint (<code>.pptx</code>)</b></td><td>—</td><td>Citado pelo PPG-UFC como formato exigido em pendrive</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Leve <strong>PDF</strong> — abre em qualquer máquina, não muda fonte nem posição — <strong>e</strong> o formato que o regimento pede, no suporte que ele pede (pendrive, e-mail, plataforma). Teste os dois no equipamento da sala dois dias antes (item −2 do checklist). Este manual não diz que uma ferramenta é melhor que outra: diz que a que entrega o formato exigido, no tempo do regimento, é a certa.</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>PDF só no e-mail.</strong> Sem internet na sala, sem apresentação. PDF em dois lugares (pendrive e nuvem) é o primeiro item do bloco «No dia».</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s24" data-title="Regras de slide">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>7 de 8 · regras do apresentacao_defesa.py e da skill defesa-qualificacao</span></div>
+    <h2 class="rv">Regras de slide: um resultado por slide, o número igual ao do texto, figura gerada por script, referências no padrão do trabalho — e nunca ler o slide</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:230px">Regra</th><th>Por quê</th><th style="width:250px">Como conferir</th></tr></thead><tbody>
+        <tr><td><b>Um resultado por slide</b></td><td>A banca acompanha um número de cada vez; dois resultados no mesmo slide viram uma pergunta sobre o que você não explicou</td><td>Cada slide de resultados tem uma tabela ou figura, o n, o efeito e o IC</td></tr>
+        <tr><td><b>O número do slide é o do texto</b></td><td>É a pergunta mais fácil da banca (Parte 2)</td><td>Página do texto anotada no rodapé ou na nota do apresentador</td></tr>
+        <tr><td><b>Figura gerada por script</b></td><td>Regenera com os dados corrigidos; nunca um gráfico redesenhado à mão</td><td>O script e o arquivo da figura no repositório (manual de Dados)</td></tr>
+        <tr><td><b>Sem ler o slide</b></td><td>Quem lê olha para a tela, não para a banca; a nota <code>\note{}</code> é o que se diz, o slide é o que se vê</td><td>Ensaio 3 com público: alguém marca cada vez que você leu</td></tr>
+        <tr><td><b>Referências no padrão do trabalho</b></td><td>A citação no slide (autor, ano) leva ao frame «Referências», no mesmo estilo do texto</td><td>O frame 10 preenchido; nada citado sem estar no texto</td></tr>
+        <tr><td><b>Sem número «ideal» de slides</b></td><td>A única regra é o tempo: o ensaio cronometrado decide quantos cabem</td><td>Ensaio 1 (Parte 4)</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="compare">
+          <div><div class="cmp-h">Slide que a banca cobra</div><ul>
+            <li>Três tabelas e um parágrafo de texto</li>
+            <li>Um número que não está no texto, ou está diferente</li>
+            <li>Gráfico sem eixo, sem n, sem unidade</li>
+            <li>Citação de um autor que não aparece nas referências</li>
+          </ul></div>
+          <div><div class="cmp-h">Slide que ajuda</div><ul>
+            <li>Um título que diz o resultado («O sensor X antecipou a falha em N % dos casos»), não o assunto («Resultados 3»)</li>
+            <li>Uma figura gerada por script, com n, efeito e intervalo</li>
+            <li>A página do texto de onde ele saiu</li>
+            <li>O tempo previsto no rodapé, para o ensaio</li>
+          </ul></div>
+        </div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>«Coloca 60 slides para mostrar tudo».</strong> A skill do plugin recusa esse pedido, e com razão: o tempo do regimento manda. O que não cabe fica no texto — que a banca já leu — e nos slides de reserva, depois do «Obrigado», para responder perguntas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s25" data-title="Limitações, conclusão e referências nos slides">
+  <div class="inner">
+    <div class="kicker-part rv">A apresentação<span>8 de 8 · blocos 6 e 7 do roteiro · frames 10 e 11 do Beamer compilado</span></div>
+    <h2 class="rv">Os últimos frames: «Discussão e limites», «Conclusão e próximos passos», «Referências» e «Obrigado. Perguntas da banca.»</h2>
+    <div class="two rv">
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">6</span><span class="nt">Discussão e limites · 10 %</span><span class="nd">O que os resultados dizem frente à literatura (as mesmas 3 a 5 referências-chave do bloco 2); as limitações ditas por você, uma a uma, com o que cada uma afeta</span></div>
+          <div class="node"><span class="nn">7</span><span class="nt">Conclusão e próximos passos · 10 %</span><span class="nd">A resposta à pergunta de pesquisa em uma frase; as contribuições; o que falta — na qualificação, o cronograma até a defesa</span></div>
+          <div class="node"><span class="nn">10</span><span class="nt">Referências</span><span class="nd">«As referências citadas nos slides, no padrão do trabalho» — só o que apareceu nos slides, no estilo do texto</span></div>
+          <div class="node gate"><span class="nn">11</span><span class="nt">Obrigado. Perguntas da banca.</span><span class="nd">Frame <code>[plain]</code>, sem número: fica na tela durante a arguição; os slides de reserva vêm depois dele</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="code"><div class="code-head">apresentacao.tex — os dois frames finais que o script grava</div><pre>\begin{frame}{Referências}
+  \footnotesize [as referências citadas nos slides, no padrão do trabalho]
+\end{frame}
+\begin{frame}[plain]
+  \centering \Large Obrigado. \\[1em] \normalsize Perguntas da banca.
+\end{frame}</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>A conclusão responde à pergunta da abertura com as mesmas palavras: quem ouviu o bloco de abertura reconhece a resposta no bloco final. O slide de limitações vem <em>antes</em> da conclusão, para que a última coisa dita seja a contribuição — e nunca uma promessa: «o que falta» é o que entraria numa próxima etapa, não o que você diz que vai corrigir.</p></div>
+        <div class="note"><span class="blabel">Slides de reserva</span><p>Depois do «Obrigado», frames que não contam no tempo: a tabela completa, a análise alternativa, o detalhe do instrumento. Servem para responder — e para mostrar que a pergunta da banca já tinha sido feita por você na banca simulada (Parte 4).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTE 4 ===================== -->
+<section class="slide divider" id="s26" data-title="Parte 4 · Ensaio e banca simulada"><div class="inner"><div class="kicker-part rv">Parte 4<span>Ensaio e banca simulada</span></div><h2 class="rv"><code>ensaio_defesa.py</code> e a leitura do que estourou; três ensaios, o último com público; a banca simulada com cinco objeções; perguntas prováveis por seção; como responder</h2><p class="rv">O tempo só fecha com cronômetro, e a arguição só fica tranquila depois de ouvir as objeções mais fortes antes da sessão. Os tempos da Figura 18 são simulados — o script os aceita para demonstração — e ditos como tal; no ensaio real, você tecla Enter ao fim de cada bloco.</p></div><div class="num">04</div></section>
+
+<section class="slide" id="s27" data-title="ensaio_defesa.py">
+  <div class="inner">
+    <div class="kicker-part rv">Ensaio e banca simulada<span>1 de 5 · demonstração de 09/09/2026 · Python 3, só biblioteca padrão · tempos simulados</span></div>
+    <h2 class="rv"><code>ensaio_defesa.py</code>: cronômetro por bloco, diferença para o previsto em %, total e CSV por ensaio — e a leitura do que estourou</h2>
+    <figure class="rv"><div class="shot"><img src="capturas/df_t2_ensaio_checklist.jpg" width="1920" height="793" alt="Terminal: ensaio_defesa.py --minutos 40 --saida 07_banca/ensaio.csv --simular com sete tempos; a saída lista os blocos com real, previsto, diferença em % e a marca ESTOUROU ou ok, o total de 44,0 min de 40 previstos (+4,0 min) e gravado: 07_banca/ensaio.csv; depois checklist_defesa.py --data 2026-11-20 --tipo defesa grava 07_banca/CHECKLIST_DEFESA.md (15 itens) e o sed mostra as primeiras linhas com a tabela Antes"></div><figcaption><b>Figura 18</b> A sessão de 09/09/2026 (execução real; pasta e autora fictícias; tempos do ensaio <strong>simulados</strong> com <code>--simular "300;420;100;540;900;200;180"</code>, só para a demonstração): Abertura 5,0 min (+25 %, ESTOUROU), Contexto 7,0 (+17 %, ESTOUROU), Objetivos 1,7 (−17 %, ok), Método 9,0 (+12 %, ok), Resultados 15,0 (+25 %, ESTOUROU), Discussão 3,3 (−17 %, ok), Conclusão 3,0 (−25 %, ok); «Total: 44.0 min de 40 previstos (+4.0 min)»; «gravado: 07_banca/ensaio.csv». Abaixo, o <code>checklist_defesa.py</code> grava 15 itens (slide «checklist_defesa.py»).</figcaption></figure>
+    <div class="two rv">
+      <div>
+        <div class="code"><div class="code-head">terminal — o ensaio real (Enter ao fim de cada bloco) e as opções</div><pre>python3 scripts/ensaio_defesa.py --minutos 40 --saida 07_banca/ensaio.csv
+# [1/7] Abertura (previsto 4.0 min) …        ← fale; tecle Enter ao terminar o bloco
+# --blocos "Abertura;Contexto;…"  --previsto "10;15;5;20;30;10;10"   (os padrões)
+# marcas: ESTOUROU acima de +15 % · curto abaixo de −30 % · ok entre os dois
+# o CSV recebe uma linha por bloco, com data: ensaios sucessivos ficam no mesmo arquivo</pre></div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:190px">O que a saída simulada mostra</th><th>O que fazer no ensaio seguinte</th></tr></thead><tbody>
+          <tr><td><b>Resultados +3,0 min (+25 %)</b></td><td>É o maior estouro em minutos: um slide de resultado a menos, ou um resultado que vai para a reserva</td></tr>
+          <tr><td><b>Abertura +1,0 min e Contexto +1,0 min</b></td><td>Os dois primeiros blocos estouraram: a apresentação começa longa — cortar a história e ir à pergunta</td></tr>
+          <tr><td><b>Conclusão −1,0 min (−25 %)</b></td><td>Ficou curta porque o tempo acabou: é o bloco que a banca ouve por último; recupere-o cortando antes</td></tr>
+          <tr><td><b>Total +4,0 min</b></td><td>Em 40 minutos, 10 % a mais; num programa com «tempo máximo» (UFSM: 50; UENF: 40 no mestrado) o presidente pode interromper</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Corte no bloco que <span class="gterm" tabindex="0" data-t="ESTOUROU · curto · ok" data-d="As marcas do ensaio_defesa.py: acima de +15 % do previsto, abaixo de −30 %, e entre os dois.">estourou</span>, não na velocidade da fala: falar mais rápido não cabe no tempo, só na impressão. Sem áudio e sem IA — o script só olha o relógio. A marca «<span class="gterm" tabindex="0" data-t="ESTOUROU · curto · ok" data-d="As marcas do ensaio_defesa.py: acima de +15 % do previsto, abaixo de −30 %, e entre os dois.">curto</span>» abaixo de −30 % também importa: um bloco muito <span class="gterm" tabindex="0" data-t="ESTOUROU · curto · ok" data-d="As marcas do ensaio_defesa.py: acima de +15 % do previsto, abaixo de −30 %, e entre os dois.">curto</span> costuma ser um bloco pulado.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s28" data-title="Três ensaios, o último com público">
+  <div class="inner">
+    <div class="kicker-part rv">Ensaio e banca simulada<span>2 de 5 · checklist_defesa.py (item −7 dias: «três ensaios cronometrados — o último com público»)</span></div>
+    <h2 class="rv">Três ensaios, o último com público: o primeiro mede, o segundo ajusta, o terceiro treina a arguição</h2>
+    <div class="two rv">
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">1</span><span class="nt">Sozinho, com cronômetro</span><span class="nd">Slides completos, <code>ensaio_defesa.py</code> rodando; o objetivo é medir: onde estourou, onde ficou curto. Não corrija no meio — termine e leia o total</span></div>
+          <div class="node"><span class="nn">2</span><span class="nt">Com os cortes feitos</span><span class="nd">Mesmo comando, mesmo CSV: a segunda rodada entra no arquivo com a data e permite comparar bloco a bloco. Meta: nenhum ESTOUROU e o total abaixo do máximo do regimento</span></div>
+          <div class="node gate"><span class="nn">3</span><span class="nt">Com público</span><span class="nd">Orientador, colegas do grupo: cada um anota as perguntas e marca cada vez que você leu o slide. A arguição desse ensaio é a banca simulada (slide seguinte)</span></div>
+        </div>
+        <div class="code"><div class="code-head">07_banca/ensaio.csv — as colunas que o script grava (uma linha por bloco, por ensaio)</div><pre>data,bloco,previsto_min,real_min,dif_pct,avaliacao
+2026-09-09T…,Abertura,4.00,5.00,+25,ESTOUROU
+2026-09-09T…,Contexto,6.00,7.00,+17,ESTOUROU
+…</pre></div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:150px">Ensaio</th><th>O que sai dele</th><th style="width:210px">Evidência</th></tr></thead><tbody>
+          <tr><td><b>1</b></td><td>A lista de blocos com ESTOUROU e curto; os cortes a fazer</td><td>Primeiras linhas do <code>ensaio.csv</code></td></tr>
+          <tr><td><b>2</b></td><td>O roteiro que cabe: total abaixo do máximo, folga para a prorrogação não ser necessária</td><td>Segundo bloco de linhas do CSV, com data</td></tr>
+          <tr><td><b>3</b></td><td>As perguntas do público, anotadas; a contagem de «leu o slide»; as respostas que precisam de um slide de reserva</td><td>Anotações e <code>06_texto/banca.md</code></td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>A folga é parte do tempo: se o regimento dá «aproximadamente 30 minutos» (UFSC), ensaie para 27; se dá «tempo máximo de 50» (UFSM), ensaie para 45. O ensaio com público acontece pelo menos uma semana antes (item −7 do checklist), para que as perguntas ainda mudem o texto de reserva e os slides — não a véspera.</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>Ensaiar sem cronômetro</strong> («eu sei que cabe»). A demonstração mostra um roteiro de 40 minutos que deu 44 com sete blocos bem planejados — e o autor só soube porque o relógio contou.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s29" data-title="Banca simulada">
+  <div class="inner">
+    <div class="kicker-part rv">Ensaio e banca simulada<span>3 de 5 · skill banca-simulada do plugin · Vitae («mock viva with my main supervisor»)</span></div>
+    <h2 class="rv">Banca simulada: as cinco objeções mais fortes ao seu trabalho, a resposta honesta em três frases e o que muda no texto</h2>
+    <div class="two rv">
+      <div>
+        <p class="lead">A <em>mock viva</em> da Vitae é isto: alguém que conhece o trabalho faz as perguntas mais difíceis antes da banca. No <a href="https://plugin.mirandastech.com.br/">plugin Pesquisa MirandasTech</a>, a skill <code>banca-simulada</code> lê o texto e produz <strong>as cinco objeções mais fortes</strong>, com uma resposta honesta para cada, e simula a arguição seção por seção — com uma regra fixa: «nunca invente literatura que a banca vai cobrar». O resultado vai para <code>06_texto/banca.md</code> (item −14 do checklist), e cada objeção procedente vira uma correção no texto <em>antes</em> da entrega, ou um slide de reserva.</p>
+        <div class="code"><div class="code-head">Claude Code ou Codex — pedidos na pasta do projeto (o plugin lê o texto e o PROGRESSO.md)</div><pre>Simule a banca: as cinco objeções mais fortes ao capítulo de método, com a resposta honesta de cada uma.
+Faça a arguição da seção de resultados, uma pergunta por vez; eu respondo e você avalia se concedi o que devia.
+Quais dessas objeções exigem mudar o texto antes da entrega, e quais só precisam de um slide de reserva?
+Grave tudo em 06_texto/banca.md.</pre></div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:150px">Frase</th><th>O que faz</th><th>Exemplo de forma</th></tr></thead><tbody>
+          <tr><td><b>1 Conceder</b></td><td>Reconhece o que é procedente na objeção, sem rodeio</td><td>«É verdade que a amostra não cobre…»</td></tr>
+          <tr><td><b>2 Defender com o dado</b></td><td>Diz o que o resultado sustenta apesar disso, com o número do texto</td><td>«Ainda assim, nos N casos observados, o efeito foi… (Tabela X)»</td></tr>
+          <tr><td><b>3 Apontar a mudança</b></td><td>Diz o que muda no texto ou o que entraria numa próxima etapa — sem prometer o que não fez</td><td>«Isso entra como limitação na seção 5.3; uma amostra maior é a próxima etapa»</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>O agente não escreve respostas para você decorar — a skill recusa esse pedido. Ele monta as perguntas e os critérios; você responde com as próprias palavras, em voz alta, no ensaio 3. Uma resposta decorada quebra na primeira pergunta que muda uma palavra; uma resposta em três frases se reconstrói em qualquer ordem.</p></div>
+        <div class="note"><span class="blabel">Sem inventar literatura</span><p>Se a objeção pede uma referência que você não tem, a resposta honesta é «não conheço esse trabalho; o que li aponta…». Inventar um autor na sessão é a única resposta que não tem conserto.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s30" data-title="Perguntas prováveis por seção">
+  <div class="inner">
+    <div class="kicker-part rv">Ensaio e banca simulada<span>4 de 5 · Vitae («a list of likely questions») · roteiro do apresentacao_defesa.py</span></div>
+    <h2 class="rv">Perguntas prováveis por seção: o que a banca costuma perguntar, o que ela testa com isso e como se preparar</h2>
+    <div class="tw rv"><table><thead><tr><th style="width:170px">Seção</th><th>Pergunta provável</th><th>O que a banca testa</th><th style="width:300px">Como preparar</th></tr></thead><tbody>
+      <tr><td><b>Pergunta e objetivos</b></td><td>«Qual é, em uma frase, a pergunta que este trabalho responde?» «Por que ela importa?»</td><td>Se você sabe o que fez e por quê; se os objetivos específicos batem com os resultados</td><td>A frase da abertura decorada com as próprias palavras; objetivos e resultados na mesma ordem</td></tr>
+      <tr><td><b>Revisão e lacuna</b></td><td>«Por que esses trabalhos e não outros?» «Conhece o estudo de X?»</td><td>Se a busca foi sistemática e se a lacuna existe mesmo</td><td>Diário de busca (bases, datas, critérios); as 3 a 5 referências-chave lidas de novo; publicações dos membros da banca (Vitae)</td></tr>
+      <tr><td><b>Método</b></td><td>«Por que esse desenho, essa amostra, esse instrumento?» «O que uma alternativa mudaria?»</td><td>Se o método sustenta os resultados; se você conhece os limites dele</td><td>Uma justificativa por escolha, com a referência metodológica; ética (CEP/CAAE) e pré-registro à mão</td></tr>
+      <tr><td><b>Resultados</b></td><td>«Esse número é o mesmo da página tal?» «Qual o n, o efeito, o intervalo?»</td><td>Se o resultado é reproduzível e se você o lê corretamente</td><td>Lista dos números-chave com a página do texto; tabela completa nos slides de reserva</td></tr>
+      <tr><td><b>Discussão e limitações</b></td><td>«O que este resultado não permite concluir?» «Por que difere de Y?»</td><td>Se você separa o que o dado mostra do que você gostaria que mostrasse</td><td>As limitações escritas por você (Parte 2), cada uma com o que afeta e o que não afeta</td></tr>
+      <tr><td><b>Conclusão e contribuição</b></td><td>«O que este trabalho acrescenta?» «O que você faria diferente?»</td><td>Se a contribuição é proporcional ao que foi feito — sem prometer nem diminuir</td><td>A resposta à pergunta em uma frase; a contribuição em duas; a próxima etapa sem promessa</td></tr>
+      <tr><td><b>Na qualificação: viabilidade</b></td><td>«Isso cabe no prazo?» «O que já está coletado?» «Qual o plano B?»</td><td>Se o projeto pode ser executado até a defesa</td><td>Cronograma no último bloco; o que já existe (piloto, dados, instrumento); o que muda se algo falhar</td></tr>
+    </tbody></table></div>
+    <div class="two rv">
+      <div class="rule-box"><span class="blabel">Regra</span><p>Escreva a sua lista — não esta — com as perguntas que você faria a um colega lendo o seu texto (é o exercício do slide «Onde as dissertações ficam»). A Vitae põe «I have produced a list of likely questions» no checklist da <em><span class="gterm" tabindex="0" data-t="Viva · mock viva" data-d="No Reino Unido (Vitae), o exame oral, em sala privada com ao menos dois examinadores; a mock viva é o ensaio com o orientador — a banca simulada deste manual.">viva</span></em>; a banca simulada do plugin produz a dela; o ensaio 3 acrescenta as do público. As três listas juntas costumam conter a maior parte do que será perguntado.</p></div>
+      <div class="note"><span class="blabel">O que a lista não faz</span><p>Não garante aprovação nem prevê a banca inteira: a banca pergunta o que quiser, e a skill do plugin recusa dizer «a banca não pode perguntar isso». O que a lista faz é tirar a surpresa das perguntas mais prováveis — e deixar a atenção para as outras.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s31" data-title="Como responder">
+  <div class="inner">
+    <div class="kicker-part rv">Ensaio e banca simulada<span>5 de 5 · arguição nos exemplos: UFSC (20 + 20), UFSM (30 + 30 ou diálogo de 60), UENF (diálogo)</span></div>
+    <h2 class="rv">Como responder na arguição: anotar antes de responder; conceder, defender com o dado, apontar a mudança; agradecer a crítica; não discutir</h2>
+    <div class="two rv">
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">1</span><span class="nt">Ouvir e anotar</span><span class="nd">Cada pergunta escrita antes de responder — na UFSC são cerca de 20 minutos de perguntas por membro antes dos 20 de resposta; sem anotação, a terceira pergunta apaga a primeira</span></div>
+          <div class="node"><span class="nn">2</span><span class="nt">Conceder o procedente</span><span class="nd">«É verdade que…» — o que a banca acertou, dito por você, encerra a objeção em vez de prolongá-la</span></div>
+          <div class="node"><span class="nn">3</span><span class="nt">Defender com o dado</span><span class="nd">O número do texto, a página, a tabela; o slide de reserva se houver</span></div>
+          <div class="node"><span class="nn">4</span><span class="nt">Apontar a mudança</span><span class="nd">O que entra no texto (vai para a lista de correções) e o que só se responde; sem prometer o que não fez</span></div>
+          <div class="node gate"><span class="nn">5</span><span class="nt">Agradecer e seguir</span><span class="nd">A crítica procedente melhora a versão final; discutir com a banca não muda o voto — muda a ata</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="compare">
+          <div><div class="cmp-h">Responder assim</div><ul>
+            <li>Repetir a pergunta em uma frase antes de responder, para confirmar que entendeu</li>
+            <li>Uma resposta por pergunta, na ordem em que foram feitas, riscando cada uma da anotação</li>
+            <li>«Não sei» seguido de «o que os dados mostram é…» quando não souber</li>
+            <li>Registrar por escrito toda correção que a banca pedir — a lista sai daí e da ata</li>
+          </ul></div>
+          <div><div class="cmp-h">Evitar</div><ul>
+            <li>Discutir: a banca pergunta o que quiser; a sessão não é um debate a vencer</li>
+            <li>Inventar uma referência, um número ou um resultado que não está no texto</li>
+            <li>Prometer («vou corrigir tudo isso») em vez de dizer o que muda e o que não muda</li>
+            <li>Responder só ao orientador ou só a quem perguntou mais forte; a banca inteira vota</li>
+          </ul></div>
+        </div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>No formato por membro (UFSC, UFSM), você responde em bloco depois de cada examinador: as anotações são a única memória. No formato de diálogo (UFSM em comum acordo, UENF), a pergunta vem a uma, mas o tempo é mais longo — até 60 minutos por examinador na UFSM: a mesma calma, três frases por vez.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTE 5 ===================== -->
+<section class="slide divider" id="s32" data-title="Parte 5 · O dia e depois"><div class="inner"><div class="kicker-part rv">Parte 5<span>O dia e depois</span></div><h2 class="rv"><code>checklist_defesa.py</code>; o dia; correções e prazos; versão final, depósito, DOI e diploma; tudo num só plugin; erros comuns; checklist; glossário; referências; como citar</h2><p class="rv">Quinze itens em três blocos — antes, no dia, depois — com data sugerida e a coluna do prazo do regimento a preencher. Depois da sessão o trabalho continua: correções no prazo, versão final, depósito, dados e código com DOI, diploma. E o que costuma dar errado, a lista para conferir, os termos e as fontes.</p></div><div class="num">05</div></section>
+
+<section class="slide" id="s33" data-title="checklist_defesa.py">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>1 de 11 · demonstração de 09/09/2026 (Figura 18) · Python 3, só biblioteca padrão</span></div>
+    <h2 class="rv"><code>checklist_defesa.py</code>: 15 itens antes, no dia e depois, com data sugerida a partir da defesa e a coluna «Prazo do regimento» para você preencher</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:120px">Quando</th><th>O quê</th><th style="width:220px">Evidência</th></tr></thead><tbody>
+        <tr><td><b>−90 d</b></td><td>Confirmar no regimento: prazos, banca, tempo de apresentação e arguição, formato</td><td>Página do regimento salva em <code>07_banca/</code></td></tr>
+        <tr><td><b>−60 d</b></td><td>Texto completo revisado; banca sugerida ao orientador</td><td><code>verificar_citacoes.py</code> e <code>verificar_refs.py</code> sem erro</td></tr>
+        <tr><td><b>−45 d</b></td><td>Banca aprovada pelo programa; data, hora e sala/link definidos com todos</td><td>E-mail de confirmação de cada membro</td></tr>
+        <tr><td><b>−30 d</b></td><td>Texto entregue à banca (PDF e impresso se o regimento pedir) com os documentos da secretaria</td><td>Protocolo de entrega</td></tr>
+        <tr><td><b>−21 d</b></td><td>Apresentação pronta (<code>apresentacao_defesa.py</code>): um resultado por slide, tempo por bloco, referências</td><td>PDF da apresentação</td></tr>
+        <tr><td><b>−14 d</b></td><td>Banca simulada: cinco objeções, respostas honestas, o que corrigir</td><td><code>06_texto/banca.md</code></td></tr>
+        <tr><td><b>−7 d</b></td><td>Três ensaios cronometrados — o último com público</td><td><code>ensaio.csv</code></td></tr>
+        <tr><td><b>−2 d</b></td><td>Material impresso (texto anotado, números-chave, tabelas); testar projetor/PDF/link</td><td>Pasta <code>07_banca/dia/</code></td></tr>
+        <tr><td><b>Dia</b></td><td>Chegar cedo; PDF em dois lugares; água; relógio visível</td><td>—</td></tr>
+        <tr><td><b>Dia</b></td><td>Apresentar no tempo; anotar cada pergunta antes de responder; conceder o procedente</td><td>Anotações da arguição</td></tr>
+        <tr><td><b>Dia</b></td><td>Ouvir o parecer e a ata; registrar todas as correções pedidas</td><td>Lista de correções</td></tr>
+        <tr><td><b>+7 d</b></td><td>Lista de correções acordada com o orientador: o que muda no texto e o que só se responde</td><td><code>07_banca/CORRECOES.md</code></td></tr>
+        <tr><td><b>+30 d</b></td><td>Versão corrigida enviada ao orientador (e à banca, se o regimento exigir)</td><td>PDF v-final-candidata</td></tr>
+        <tr><td><b>+60 d</b></td><td>Depósito da versão final conforme o regimento; dados e código com DOI se previsto</td><td>Recibo de depósito</td></tr>
+        <tr><td><b>+90 d</b></td><td>Diploma/certificado: acompanhar a solicitação na secretaria</td><td>Protocolo</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="code"><div class="code-head">terminal — o comando da demonstração (Figura 18) e as opções</div><pre>python3 scripts/checklist_defesa.py --data 2026-11-20 --tipo defesa --saida 07_banca/CHECKLIST_DEFESA.md
+# gravado: 07_banca/CHECKLIST_DEFESA.md (15 itens)
+# --tipo qualificacao  → o item +60 vira «Incorporar as sugestões da banca ao plano até a defesa;
+#                        atualizar cronograma e PROGRESSO.md»
+# sem --saida          → imprime na tela;  --forcar  → sobrescreve um arquivo existente</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>As datas são <em>sugeridas</em> a partir da data marcada; a coluna «Prazo do regimento» nasce com «[conferir]» em todas as linhas e é a primeira coisa a preencher (Parte 1). Onde o regimento for mais exigente — 60 dias para a versão final na UFSM, 30 na UFSC sem alterações —, o prazo dele substitui o sugerido. Cada item tem uma evidência: só marque «Feito» quando ela existir.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s34" data-title="No dia">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>2 de 11 · bloco «No dia» do checklist · roteiro do PPGEC/UFSM · UFC · UFES</span></div>
+    <h2 class="rv">No dia: material em dois lugares, o tempo do regimento, a arguição anotada, o resultado em local privado, a ata</h2>
+    <div class="two rv">
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">1</span><span class="nt">Material</span><span class="nd">PDF em dois lugares (pendrive e nuvem) e o formato pedido (<code>.pptx</code> em pendrive no PPG-UFC); texto anotado, lista de números-chave, tabelas principais; água; relógio visível</span></div>
+          <div class="node"><span class="nn">2</span><span class="nt">Chegar cedo</span><span class="nd">Testar projetor, PDF e link antes da instalação da sessão — no formato remoto ou híbrido, a conexão também é material</span></div>
+          <div class="node"><span class="nn">3</span><span class="nt">Apresentar no tempo</span><span class="nd">O roteiro ensaiado, com a folga: num programa com «tempo máximo», o presidente pode encerrar; a prorrogação, quando existe, é a critério dele (UENF)</span></div>
+          <div class="node"><span class="nn">4</span><span class="nt">Arguição</span><span class="nd">Anotar cada pergunta antes de responder; conceder o procedente; três frases; não discutir (Parte 4)</span></div>
+          <div class="node"><span class="nn">5</span><span class="nt">Resultado</span><span class="nd">A banca delibera sem você — «em local privado» na UFSM — e divulga; aprovação por maioria simples no exemplo</span></div>
+          <div class="node gate"><span class="nn">6</span><span class="nt">Ata e correções</span><span class="nd">Ouvir o parecer e a ata; registrar por escrito todas as correções pedidas — é a lista do item +7</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:170px">O que a ata registra (exemplos)</th><th>Onde</th></tr></thead><tbody>
+          <tr><td><b>Resultado</b></td><td>Aprovado ou não aprovado, com as condições e o prazo (UFSM, UENF, UFSC)</td></tr>
+          <tr><td><b>Formato da sessão</b></td><td>Presencial, videoconferência ou híbrido (UFSM)</td></tr>
+          <tr><td><b>Assinaturas</b></td><td>Certificado digital, GOV.BR ou à mão para membros estrangeiros (UFSM); plataforma Asten, em até 2 dias (UFES)</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Do momento em que a banca sai para deliberar até a leitura da ata, nada depende de você. O que depende é a lista de correções: anote enquanto a banca fala, confirme com o orientador no fim, e não saia da sala sem saber o resultado exato e o prazo — «<span class="gterm" tabindex="0" data-t="Aprovado com modificações" data-d="Aprovação condicionada à entrega da versão final com as correções no prazo (UFSC: 60, 90 ou 120 dias conforme o grau; UFSM: até 60).">aprovado com modificações</span> substanciais» na UFSC dá 90 ou 120 dias; «aprovado» na UFSM dá até 60.</p></div>
+        <div class="note"><span class="blabel">Quem está na sala</span><p>Sessão pública nos exemplos brasileiros: colegas e família podem assistir. Onde a sessão é pública, um colega na plateia pode anotar as perguntas para você — ajuda na lista de correções.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s35" data-title="Depois: correções e prazos">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>3 de 11 · UFSC · UFSM · UENF · UFC · Vitae · itens +7 e +30 do checklist</span></div>
+    <h2 class="rv">Depois: a lista de correções acordada com o orientador e os prazos da versão final — de 30 a 120 dias nos exemplos</h2>
+    <div class="two rv">
+      <div class="tw"><table><thead><tr><th style="width:230px">Resultado (programa)</th><th>Prazo para a versão final ou nova sessão</th><th style="width:210px">Se o prazo passar</th></tr></thead><tbody>
+        <tr><td><b>Aprovada sem alterações</b> (UFSC)</td><td>30 dias</td><td>—</td></tr>
+        <tr><td><b>Modificações de aperfeiçoamento</b> (UFSC)</td><td>60 dias</td><td>—</td></tr>
+        <tr><td><b>Modificações substanciais</b> (UFSC)</td><td>90 dias (mestrado) · 120 dias (doutorado)</td><td>—</td></tr>
+        <tr><td><b>Aprovado</b> (UFSM)</td><td>Até 60 dias para as modificações e a entrega final</td><td>—</td></tr>
+        <tr><td><b>Aprovado com condições</b> (UENF)</td><td>Correções ou nova defesa em 3 a 6 meses</td><td>Não cumprir = reprovação</td></tr>
+        <tr><td><b>Reprovado</b> (UFSM)</td><td>Nova defesa em até 6 meses</td><td>Segunda reprovação = desligamento</td></tr>
+        <tr><td><b>Reprovado na qualificação</b> (UFC)</td><td>Repetir em até 60 dias, sem ultrapassar o prazo regimental</td><td>—</td></tr>
+        <tr><td><b>Correções menores, maiores ou resubmissão</b> (Vitae)</td><td>«A maioria dos candidatos terá correções a fazer», com prazo</td><td>Resubmissão, às vezes com título inferior</td></tr>
+      </tbody></table></div>
+      <div>
+        <div class="code"><div class="code-head">07_banca/CORRECOES.md — o que o item +7 pede (modelo; o conteúdo é seu)</div><pre># Correções — defesa de 2026-11-20 · prazo do regimento: [conferir]
+| # | Quem pediu | O que muda no texto (seção) | Só se responde? | Feito |
+|---|---|---|---|---|
+| 1 | membro externo | Limitação da amostra na seção 5.3 | não | [ ] |
+| 2 | membro interno | Tabela 4: acrescentar o intervalo de confiança | não | [ ] |
+| 3 | presidente | Referência X discutida na conclusão | sim, carta ao orientador | [ ] |</pre></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Sete dias depois da sessão, a lista de correções está acordada com o orientador: para cada pedido, o que muda no texto e o que só se responde (algumas sugestões não viram texto; a decisão é sua e do orientador, e fica registrada). A versão corrigida vai ao orientador aos 30 dias — e à banca, se o regimento exigir — com folga para o prazo do regimento, que é o que vale.</p></div>
+        <div class="trap"><span class="blabel">Armadilha</span><p><strong>Perder o prazo da versão final.</strong> Na UENF é reprovação; em outros programas, o título fica parado. O prazo começa na data da ata, não na data em que você se sentiu pronto.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s36" data-title="Versão final, depósito, DOI e diploma">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>4 de 11 · itens +60 e +90 do checklist · Resolução CNE/CES nº 7/2017, Art. 8º, §2º · BDTD · Catálogo CAPES</span></div>
+    <h2 class="rv">Versão final, depósito, dados e código com DOI, diploma: o que fecha o curso depois da ata</h2>
+    <div class="two rv">
+      <div>
+        <div class="flow">
+          <div class="node"><span class="nn">1</span><span class="nt">Versão final</span><span class="nd">O texto com todas as correções da lista, no prazo do regimento; a folha de aprovação e a ficha catalográfica como a biblioteca pede</span></div>
+          <div class="node"><span class="nn">2</span><span class="nt">Depósito</span><span class="nd">Entrega da versão final à biblioteca ou ao repositório institucional, conforme o regimento (item +60); recibo guardado. É daí que o trabalho vai para a <span class="gterm" tabindex="0" data-t="BDTD" data-d="Biblioteca Digital Brasileira de Teses e Dissertações, do IBICT: 175 instituições e 1.172.571 documentos em 09/09/2026.">BDTD</span> e para o Catálogo da CAPES (Parte 2)</span></div>
+          <div class="node"><span class="nn">3</span><span class="nt">Dados e código com DOI</span><span class="nd">Se o programa prevê ou o texto promete: a versão dos dados e dos scripts que gerou os resultados, com identificador permanente (manuais de <a href="https://git.mirandastech.com.br/">Git</a> e <a href="https://cienciaaberta.mirandastech.com.br/">Ciência aberta</a>)</span></div>
+          <div class="node gate"><span class="nn">4</span><span class="nt">Diploma</span><span class="nd">Solicitação acompanhada na secretaria (item +90); os diplomas de mestrado e doutorado regulares «terão validade nacional» (Resolução CNE/CES nº 7/2017, Art. 8º, §2º)</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="tw"><table><thead><tr><th style="width:170px">Termo</th><th>O que é</th></tr></thead><tbody>
+          <tr><td><b>Versão final</b></td><td>O texto corrigido depois da defesa, aceito pelo orientador (e pela banca, quando o regimento pede) — a que vale como trabalho de conclusão</td></tr>
+          <tr><td><b>Depósito</b></td><td>A entrega formal da versão final ao acervo da instituição; na UFES, o «depósito» também é a entrega do texto antes da defesa, com PDF de até 15 MB — os dois usos existem</td></tr>
+          <tr><td><b>DOI</b></td><td>Identificador permanente de um objeto digital — para o repositório de dados e código, emitido no depósito em repositório aberto</td></tr>
+          <tr><td><b>Diploma</b></td><td>Emitido pelo curso reconhecido; a Sucupira mostra a situação do curso (Parte 1)</td></tr>
+        </tbody></table></div>
+        <div class="rule-box"><span class="blabel">Regra</span><p>Só a versão depositada é pública — e é a que fica na BDTD com o seu nome. Confira nela o que conferiu antes da defesa (números, citações, referências) mais a lista de correções, item por item, marcada como feita. Dados e código ganham a mesma versão (tag) e o mesmo DOI citado no texto final.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s37" data-title="Tudo num só plugin">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>5 de 11</span></div>
+    <h2 class="rv">Tudo num só plugin: as skills <code>defesa-qualificacao</code> e <code>banca-simulada</code> organizam, cronometram e simulam; o aluno apresenta, responde e decide</h2>
+    <div class="two rv">
+      <div>
+        <p class="lead">O <a href="https://plugin.mirandastech.com.br/">plugin Pesquisa MirandasTech</a> (para Claude Code e Codex) põe os papéis dos manuais dentro do assistente, com um estado único (<code>PROGRESSO.md</code>) e um gerente — o Pesquisador — que só fecha uma fase com evidência. A skill <code>defesa-qualificacao</code> segue este manual: lê o regimento com você, preenche a coluna «Prazo do regimento», roda os três scripts e monta a lista de correções; a <code>banca-simulada</code> produz as cinco objeções e a arguição por seção. O que elas não fazem: apresentar, responder e decidir o que corrigir — isso é seu, e o regimento vale sobre qualquer sugestão delas.</p>
+        <div class="tw"><table><thead><tr><th style="width:150px">Fase</th><th>O que a skill faz com você</th><th style="width:150px">Slides</th></tr></thead><tbody>
+          <tr><td><b>1 Regimento</b></td><td>Ler o regimento; preencher os prazos do checklist; banca sugerida ao orientador</td><td>Parte 1</td></tr>
+          <tr><td><b>2 Texto fechado</b></td><td>Verificações de citações e referências, números conferidos; <code>apresentacao_defesa.py</code>; você preenche os frames</td><td>Partes 2 e 3</td></tr>
+          <tr><td><b>3 Banca simulada</b></td><td><code>banca-simulada</code> → <code>06_texto/banca.md</code>; corrigir o texto onde a objeção procede</td><td>Parte 4</td></tr>
+          <tr><td><b>4 Ensaios</b></td><td>Três com <code>ensaio_defesa.py</code>; ajustar o roteiro até fechar no tempo</td><td>Parte 4</td></tr>
+          <tr><td><b>5 Depois</b></td><td>Correções, versão final, depósito; fase 10 no <code>PROGRESSO.md</code></td><td>Parte 5</td></tr>
+        </tbody></table></div>
+      </div>
+      <div>
+        <div class="code"><div class="code-head">Claude Code ou Codex — pedidos na pasta do projeto</div><pre>Pesquisador, onde paramos?
+Leia comigo o regimento (07_banca/regimento.pdf) e preencha a coluna «Prazo do regimento» do checklist.
+Gere o esqueleto da apresentação para 30 minutos, tipo defesa, com os seis capítulos do texto.
+Simule a banca: as cinco objeções mais fortes e a resposta honesta de cada uma.
+Monte a lista de correções a partir das minhas anotações da arguição.
+/pesquisa:banca
+/pesquisa:status</pre></div>
+        <div class="tw"><table><thead><tr><th style="width:250px">Pedido</th><th>Resposta da skill</th></tr></thead><tbody>
+          <tr><td>«Escreve as respostas para eu decorar.»</td><td>Recusa; monta perguntas e critérios; você responde com as próprias palavras</td></tr>
+          <tr><td>«Coloca 60 slides para mostrar tudo.»</td><td>Recusa; o tempo do regimento manda; um resultado por slide</td></tr>
+          <tr><td>«Diz que a banca não pode perguntar isso.»</td><td>Recusa; a banca pergunta o que quiser; prepara a resposta honesta</td></tr>
+          <tr><td>«Inventa um resultado bonito para o slide.»</td><td>Recusa; slide com o número do texto e a fonte</td></tr>
+        </tbody></table></div>
+        <div class="note"><span class="blabel">Onde cada manual entra</span><p><a href="https://metodologia.mirandastech.com.br/">Metodologia</a> decide o projeto; <a href="https://busca.mirandastech.com.br/">Busca</a> e <a href="https://prisma.mirandastech.com.br/">PRISMA</a> produzem a revisão; <a href="https://zotero.mirandastech.com.br/">Zotero</a> e <a href="https://latex.mirandastech.com.br/">LaTeX</a> fecham o texto; <a href="https://dados.mirandastech.com.br/">Dados</a> gera as figuras; <a href="https://git.mirandastech.com.br/">Git</a> e <a href="https://cienciaaberta.mirandastech.com.br/">Ciência aberta</a> dão o DOI; este manual prepara a banca; <a href="https://manual.mirandastech.com.br/">Uso de IA</a> declara. Hub: <a href="https://www.mirandastech.com.br/pesquisa">mirandastech.com.br/pesquisa</a>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s38" data-title="Erros comuns">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>6 de 11</span></div>
+    <h2 class="rv">Erros comuns — como aparecem e como corrigir</h2>
+    <div class="tw rv"><table><thead><tr><th>Erro</th><th>Como aparece</th><th>Causa</th><th style="width:300px">Correção</th></tr></thead><tbody>
+      <tr><td>Não ler o regimento</td><td>Apresentação de 40 min num programa de 30; documento faltando na secretaria</td><td>Confiar no «ouvi dizer»</td><td><span class="pill p-stop">item −90 do checklist; os seis números do slide «A regra»</span></td></tr>
+      <tr><td>Slides demais</td><td>Bloco «Resultados» com ESTOUROU; a conclusão engolida pelo tempo</td><td>Querer mostrar tudo</td><td><span class="pill p-blue">um resultado por slide; o resto na reserva ou no texto</span></td></tr>
+      <tr><td>Ler o slide</td><td>Olhar na tela, banca sem contato; texto corrido nos slides</td><td>Slide escrito como roteiro falado</td><td><span class="pill p-blue">a nota <span class="gterm" tabindex="0" data-t="\note{}" data-d="A nota do apresentador, gravada no .tex e invisível no PDF: o que dizer em cada frame.">\note{}</span> é o que se diz; ensaio 3 conta as leituras</span></td></tr>
+      <tr><td>Número diferente do texto</td><td>«Na página tal está outro valor»</td><td>Slide digitado à mão, tabela regenerada depois</td><td><span class="pill p-stop">slide a partir da mesma tabela; página no rodapé</span></td></tr>
+      <tr><td>Discutir com a banca</td><td>Réplica à réplica; o tempo de resposta vira debate</td><td>Tomar a objeção como ataque</td><td><span class="pill p-stop">conceder, defender com o dado, apontar a mudança; agradecer</span></td></tr>
+      <tr><td>Não anotar as perguntas</td><td>Responde à última e esquece as duas primeiras</td><td>Formato por membro (20 ou 30 min de perguntas em bloco)</td><td><span class="pill p-amber">papel e caneta; repetir a pergunta antes de responder</span></td></tr>
+      <tr><td>Prometer o que não fez</td><td>«Isso vai ser corrigido», «vou coletar mais»</td><td>Confundir limitação com falha</td><td><span class="pill p-amber">o que muda no texto × o que é próxima etapa</span></td></tr>
+      <tr><td>Esconder limitação</td><td>A banca a encontra e pergunta por que não está no texto</td><td>Medo de «enfraquecer» o trabalho</td><td><span class="pill p-blue">seção de limitações e bloco «Discussão e limites»</span></td></tr>
+      <tr><td>Ensaiar sem cronômetro</td><td>44 minutos em 40 (a demonstração); prorrogação negada</td><td>«Eu sei que cabe»</td><td><span class="pill p-amber">ensaio_defesa.py; três ensaios; folga</span></td></tr>
+      <tr><td>PDF só no e-mail</td><td>Sem internet na sala; formato errado para o equipamento</td><td>Um lugar só, um formato só</td><td><span class="pill p-stop">pendrive e nuvem; PDF e o formato do regimento; testar −2 d</span></td></tr>
+      <tr><td>Esquecer a ata e as correções</td><td>Semanas depois, ninguém lembra o que a banca pediu</td><td>Alívio depois do resultado</td><td><span class="pill p-amber">registrar na hora; lista acordada com o orientador em 7 dias</span></td></tr>
+      <tr><td>Perder o prazo da versão final</td><td>Título parado; na UENF, reprovação</td><td>Contar o prazo da data «em que me senti pronto»</td><td><span class="pill p-stop">prazo do regimento na lista de correções; versão ao orientador aos 30 d</span></td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
+<section class="slide" id="s39" data-title="Checklist final">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>7 de 11</span></div>
+    <h2 class="rv">Checklist final: da leitura do regimento ao depósito da versão final</h2>
+    <p class="lead rv">Marque conforme concluir. O estado fica salvo neste navegador — não é compartilhado nem enviado a lugar nenhum. O checklist completo, com datas, está no <code>07_banca/CHECKLIST_DEFESA.md</code> gerado pelo script.</p>
+    <div class="check rv" id="checklist">
+      <div class="check-item"><input type="checkbox" id="c01"><label for="c01"><b>Regimento</b>Lido e salvo em <code>07_banca/</code>; os seis números anotados (tempo, banca, arguição, prazos, formato, documentos); coluna «Prazo do regimento» do checklist preenchida</label></div>
+      <div class="check-item"><input type="checkbox" id="c02"><label for="c02"><b>Qualificação × defesa</b>Sei qual exame é o meu, o que a banca avalia nele e o que o resultado permite (aprovado, com modificações, reprovado) no meu programa</label></div>
+      <div class="check-item"><input type="checkbox" id="c03"><label for="c03"><b>Banca e data</b>Banca aprovada pelo programa; data, hora e sala/link confirmados por cada membro; documentos da secretaria entregues («nada consta», formulários, declaração)</label></div>
+      <div class="check-item"><input type="checkbox" id="c04"><label for="c04"><b>Texto fechado</b>Números iguais nas tabelas, figuras e slides; citações e referências verificadas; limitações escritas por mim; texto entregue no prazo</label></div>
+      <div class="check-item"><input type="checkbox" id="c05"><label for="c05"><b>Três defesas lidas</b>Trabalhos aprovados na minha área, lidos como banca, com as perguntas que eu faria anotadas</label></div>
+      <div class="check-item"><input type="checkbox" id="c06"><label for="c06"><b>Apresentação</b>Roteiro por bloco com tempo (<code>apresentacao_defesa.py</code>) preenchido com os resultados reais; um resultado por slide; referências; limitações antes da conclusão</label></div>
+      <div class="check-item"><input type="checkbox" id="c07"><label for="c07"><b>Formato</b>PDF em pendrive e nuvem, mais o formato que o regimento pede; testado no equipamento da sala dois dias antes</label></div>
+      <div class="check-item"><input type="checkbox" id="c08"><label for="c08"><b>Ensaios</b>Três com <code>ensaio_defesa.py</code>, o último com público; nenhum bloco ESTOUROU; total com folga abaixo do máximo do regimento</label></div>
+      <div class="check-item"><input type="checkbox" id="c09"><label for="c09"><b>Banca simulada</b>Cinco objeções com resposta honesta em três frases (<code>06_texto/banca.md</code>); o que procedia foi corrigido no texto ou virou slide de reserva; lista de perguntas prováveis por seção</label></div>
+      <div class="check-item"><input type="checkbox" id="c10"><label for="c10"><b>No dia</b>Material, água, relógio; cada pergunta anotada antes de responder; parecer e ata ouvidos; todas as correções registradas</label></div>
+      <div class="check-item"><input type="checkbox" id="c11"><label for="c11"><b>Depois</b>Lista de correções acordada com o orientador em 7 dias; versão final no prazo do regimento; depósito feito; dados e código com DOI se previsto; diploma solicitado</label></div>
+      <div class="check-item"><input type="checkbox" id="c12"><label for="c12"><b>IA declarada</b>Uso do assistente (banca simulada, roteiro, checklist) declarado no texto e no repositório, conforme o manual de Uso de IA</label></div>
+      <div class="check-foot"><span id="check-status">0 de 12</span><button type="button" id="check-reset">limpar</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide alt" id="s40" data-title="Glossário">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>8 de 11</span></div>
+    <h2 class="rv">Glossário</h2>
+    <p class="lead rv">Tudo que aparece no manual sem ser explicado no próprio slide.</p>
+    <div class="gl4 rv"><div><h4 style="margin-top:0">Sessão, banca e resultado</h4><dl class="gl"><dt>Qualificação</dt><dd>Exame anterior à defesa em que a banca avalia o projeto e a capacidade de executá-lo; no PPG-UFC, até 60 dias antes da defesa, com pelo menos 3 membros.</dd><dt>Defesa</dt><dd>Sessão, pública nos exemplos brasileiros, em que o trabalho de conclusão é apresentado e arguido pela banca; termina com a deliberação e a ata.</dd><dt>Dissertação · tese</dt><dd>O trabalho de conclusão do mestrado e o do doutorado; a Resolução CNE/CES nº 7/2017 diz que os cursos se diferenciam pela «natureza do trabalho de conclusão».</dd><dt>Banca examinadora (comissão examinadora)</dt><dd>Os doutores designados para avaliar e votar; a composição é do regimento (UFSC: 2 + 1 no mestrado; UFC: 3 ou 5; UENF: 4; UFES: 3 a 5, ímpar).</dd><dt>Titular · suplente</dt><dd>Titular vota; suplente substitui um titular que falte — a UFSC, a UENF e a UFES exigem suplente.</dd><dt>Membro externo</dt><dd>Examinador de fora do programa (UFSC, mestrado) ou de fora da universidade (UFSC, doutorado; UENF); cada regimento define «externo».</dd><dt>Presidente da sessão</dt><dd>Quem instala os trabalhos, dá a palavra e conduz a deliberação; o orientador na UFSC e na UFES (com voto na UFES); desempata em número par na UFSM.</dd><dt>Arguição</dt><dd>A parte em que os membros perguntam e o candidato responde: por membro, com tempo igual de resposta (UFSC, UFSM), ou em diálogo (UFSM em comum acordo, UENF).</dd><dt>Ata</dt><dd>O documento da sessão: resultado, condições, formato (UFSM) e assinaturas — digitais ou em plataforma (UFSM, UFES).</dd><dt>Aprovado com modificações</dt><dd>Aprovação condicionada à entrega da versão final com as correções no prazo (UFSC: 60, 90 ou 120 dias conforme o grau; UFSM: até 60).</dd><dt>Versão final</dt><dd>O texto corrigido depois da defesa, aceito pelo orientador (e pela banca, quando o regimento pede).</dd><dt>Depósito</dt><dd>A entrega formal: da versão final ao acervo da instituição, ou — na UFES — do texto antes da defesa, com PDF de até 15 MB.</dd><dt>Nada consta</dt><dd>Declaração de que o aluno não tem pendências; a UENF a exige em até 7 dias úteis antes da defesa.</dd><dt>Regimento</dt><dd>As normas do programa (e da universidade) que fixam tempo, banca, arguição, prazos, formato e documentos; prevalece sobre este manual.</dd></dl></div><div><h4 style="margin-top:0">Sistema, ferramentas e preparação</h4><dl class="gl"><dt>Resolução CNE/CES nº 7/2017</dt><dd>A norma nacional dos cursos stricto sensu: avaliação pela Capes, diplomas com validade nacional, língua estrangeira admitida, defesa direta de tese só excepcionalmente.</dd><dt>CAPES</dt><dd>Órgão que avalia os programas de pós-graduação; a Avaliação Quadrienal e o Catálogo de Teses são dela.</dd><dt>Plataforma Sucupira</dt><dd>O sistema de dados da pós-graduação brasileira (versão 4.1.54 em 09/09/2026); «Cursos avaliados e reconhecidos», «Coleta de Dados».</dd><dt>BDTD</dt><dd>Biblioteca Digital Brasileira de Teses e Dissertações, do IBICT: 175 instituições e 1.172.571 documentos em 09/09/2026.</dd><dt>Catálogo de Teses e Dissertações</dt><dd>A busca pública da CAPES nos trabalhos informados pelos programas.</dd><dt>Beamer</dt><dd>Classe LaTeX para apresentações (CTAN, versão 3.78); incluída no TeX Live e no MiKTeX; compila no Overleaf.</dd><dt>Frame</dt><dd>A unidade de conteúdo do Beamer (<code>\begin{frame}…\end{frame}</code>); um frame pode gerar vários slides com <code>\pause</code> ou <code>\item&lt;2-&gt;</code>.</dd><dt>Tema (Beamer)</dt><dd>O conjunto de layout, cores e fontes (<code>\usetheme{Madrid}</code>, Boadilla na demonstração; Berlin, Copenhagen).</dd><dt>\note{}</dt><dd>A nota do apresentador, gravada no <code>.tex</code> e invisível no PDF: o que dizer em cada frame.</dd><dt>latexmk · TinyTeX · tlmgr</dt><dd>O compilador em cadeia usado pelo <code>--compilar</code>; a distribuição LaTeX mínima da demonstração; o gerenciador que instalou beamer, pgf e translator.</dd><dt>Overleaf</dt><dd>Editor LaTeX on-line; compila o <code>apresentacao.tex</code> no plano gratuito.</dd><dt>Viva · mock viva</dt><dd>No Reino Unido (Vitae), o exame oral, em sala privada com ao menos dois examinadores; a <em>mock viva</em> é o ensaio com o orientador — a banca simulada deste manual.</dd><dt>Banca simulada</dt><dd>Skill do plugin que produz as cinco objeções mais fortes e a arguição por seção, sem inventar literatura; grava <code>06_texto/banca.md</code>.</dd><dt>ESTOUROU · curto · ok</dt><dd>As marcas do <code>ensaio_defesa.py</code>: acima de +15 % do previsto, abaixo de −30 %, e entre os dois.</dd><dt>DOI</dt><dd>Digital Object Identifier: identificador permanente; para dados e código, emitido no depósito em repositório aberto (manuais de Git e Ciência aberta).</dd></dl></div></div>
+  </div>
+</section>
+
+<section class="slide" id="s41" data-title="Referências (1 de 2)">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>9 de 11 · fontes conferidas em 09/09/2026</span></div>
+    <h2 class="rv">Referências (1 de 2): a legislação, a CAPES e os cinco regimentos citados como exemplo</h2>
+    <ol class="refs rv" start="1">
+      <li><span class="rt">BRASIL. Conselho Nacional de Educação. Câmara de Educação Superior. <em>Resolução CNE/CES nº 7, de 11 de dezembro de 2017.</em> Estabelece normas para o funcionamento de cursos de pós-graduação stricto sensu. Diário Oficial da União, n. 237, 12 dez. 2017, seção 1, p. 21. Texto público lido na página de legislação da ABMES; PDF lido diretamente.</span><a href="https://abmes.org.br/">abmes.org.br (Legislação)</a></li>
+      <li><span class="rt">CAPES. <em>Sobre a Avaliação: Conceitos, processos e normas</em>; <em>Mestrado e Doutorado: o que são?</em> gov.br/capes. Acesso em 9 set. 2026.</span><a href="https://www.gov.br/capes/">gov.br/capes</a></li>
+      <li><span class="rt">CAPES. <em><span class="gterm" tabindex="0" data-t="Plataforma Sucupira" data-d="O sistema de dados da pós-graduação brasileira (versão 4.1.54 em 09/09/2026); «Cursos avaliados e reconhecidos», «Coleta de Dados».">Plataforma Sucupira</span></em>, versão 4.1.54. Acesso em 9 set. 2026.</span><a href="https://sucupira.capes.gov.br/">sucupira.capes.gov.br</a></li>
+      <li><span class="rt">CAPES. <em><span class="gterm" tabindex="0" data-t="Catálogo de Teses e Dissertações" data-d="A busca pública da CAPES nos trabalhos informados pelos programas.">Catálogo de Teses e Dissertações</span>.</em> Acesso em 9 set. 2026.</span><a href="https://catalogodeteses.capes.gov.br/">catalogodeteses.capes.gov.br</a></li>
+      <li><span class="rt">IBICT. <em>Biblioteca Digital Brasileira de Teses e Dissertações (BDTD).</em> 175 instituições, 835.223 dissertações, 337.348 teses, 1.172.571 documentos. Acesso em 9 set. 2026.</span><a href="https://bdtd.ibict.br/">bdtd.ibict.br</a></li>
+      <li><span class="rt">UNIVERSIDADE FEDERAL DO CEARÁ. Programa de Pós-Graduação em Ciências Médico-Cirúrgicas. <em>Orientações – Qualificações e Defesas.</em> Acesso em 9 set. 2026.</span><a href="https://ppgcmc.ufc.br/">ppgcmc.ufc.br</a></li>
+      <li><span class="rt">UNIVERSIDADE FEDERAL DE SANTA CATARINA. Programa de Pós-Graduação em Educação. <em>Defesa de Dissertação e Tese</em> (Resolução Normativa nº 95/CUn/2017 e Regimento do PPGE). Acesso em 9 set. 2026.</span><a href="https://ppge.ufsc.br/">ppge.ufsc.br</a></li>
+      <li><span class="rt">UNIVERSIDADE FEDERAL DE SANTA MARIA. Programa de Pós-Graduação em Engenharia Civil. <em>Instruções para a realização de defesa de Dissertação/Tese e Qualificação de Mestrado/Doutorado.</em> Acesso em 9 set. 2026.</span><a href="https://www.ufsm.br/cursos/pos-graduacao/santa-maria/ppgec">ufsm.br/cursos/pos-graduacao/santa-maria/ppgec</a></li>
+      <li><span class="rt">UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE DARCY RIBEIRO. Programa de Pós-Graduação em Engenharia e Ciência dos Materiais. <em>Procedimentos para Defesa de Dissertação ou Tese.</em> Acesso em 9 set. 2026.</span><a href="https://uenf.br/">uenf.br</a></li>
+      <li><span class="rt">UNIVERSIDADE FEDERAL DO ESPÍRITO SANTO. Programa de Pós-Graduação em Direito. <em>Orientações para a defesa de dissertação.</em> Acesso em 9 set. 2026.</span><a href="https://direito.ufes.br/pt-br/defesa-ppgdir">direito.ufes.br/pt-br/defesa-ppgdir</a></li>
+    </ol>
+  </div>
+</section>
+
+<section class="slide alt" id="s42" data-title="Referências (2 de 2)">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois<span>10 de 11 · fontes conferidas em 09/09/2026</span></div>
+    <h2 class="rv">Referências (2 de 2): a preparação para a <em>viva</em>, as ferramentas de apresentação, os scripts e o plugin</h2>
+    <ol class="refs rv" start="11">
+      <li><span class="rt">VITAE. <em>The viva</em>: Preparing for your doctoral viva; Viva Preparation Checklist; The format for a viva; Top tips for handling the viva discussion. Reino Unido. Acesso em 9 set. 2026. A página «After your viva» não foi acessada (404); os resultados possíveis citados vêm do resultado de busca.</span><a href="https://www.vitae.ac.uk/">vitae.ac.uk</a></li>
+      <li><span class="rt">CTAN. <em>Beamer – A LaTeX class for producing presentations and slides.</em> Versão 3.78, 20 ago. 2026. Mantenedores samcarter e Joseph Wright. LPPL 1.3c, GPL v2+, FDL. Acesso em 9 set. 2026.</span><a href="https://ctan.org/pkg/beamer">ctan.org/pkg/beamer</a></li>
+      <li><span class="rt">OVERLEAF. <em>Beamer.</em> Overleaf Learn. Acesso em 9 set. 2026.</span><a href="https://www.overleaf.com/learn/latex/Beamer">overleaf.com/learn/latex/Beamer</a></li>
+      <li><span class="rt">THE DOCUMENT FOUNDATION. <em>LibreOffice</em>: «One suite. Six tools.»; Impress. Acesso em 9 set. 2026.</span><a href="https://www.libreoffice.org/">libreoffice.org</a></li>
+      <li><span class="rt">GOOGLE. <em>Apresentações Google</em> (Google Slides). Google Workspace. Acesso em 9 set. 2026.</span><a href="https://workspace.google.com/products/slides/">workspace.google.com/products/slides</a></li>
+      <li><span class="rt">MIRANDASTECH. <em>apresentacao_defesa.py</em>; <em>ensaio_defesa.py</em>; <em>checklist_defesa.py</em>; skills <em>defesa-qualificacao</em> e <em>banca-simulada</em> do plugin Pesquisa MirandasTech. Executados em 09/09/2026 (pasta e autora fictícias; Beamer compilado com TinyTeX; tempos do ensaio simulados). CC BY 4.0.</span><a href="https://defesa.mirandastech.com.br/">defesa.mirandastech.com.br</a> <a href="https://plugin.mirandastech.com.br/">plugin.mirandastech.com.br</a></li>
+      <li><span class="rt">MIRANDASTECH. Manuais irmãos citados: Metodologia; Busca; PRISMA; Zotero; LaTeX; Dados; Git; Ciência aberta; Uso de IA; Notebook; Plugin. Acesso em 9 set. 2026.</span><a href="https://www.mirandastech.com.br/pesquisa">mirandastech.com.br/pesquisa</a></li>
+    </ol>
+    <div class="note rv"><span class="blabel">Sobre as datas e o que não foi conferido</span><p>Tempos, composições de banca, prazos, versões (Beamer 3.78, Sucupira 4.1.54) e contadores da BDTD foram lidos nas páginas acima em 09/09/2026 e mudam sem aviso; os regimentos completos não foram lidos — só as páginas públicas de orientações. Não há neste manual tempo ou banca «padrão nacional», prazos de programas não listados, regras de vestimenta nem número «ideal» de slides, porque nada disso foi conferido nessa data. Páginas do IFSudesteMG, da UFPE e da UNIRIO e o <code>beameruserguide.pdf</code> não foram obtidos.</p></div>
+  </div>
+</section>
+
+<section class="slide" id="s43" data-title="Como citar, uso de IA e licença">
+  <div class="inner">
+    <div class="kicker-part rv">O dia e depois · último slide<span>11 de 11</span></div>
+    <h2 class="rv">Como citar este manual, declaração de uso de IA e licença</h2>
+    <div class="two rv">
+      <div>
+        <div class="case"><span class="blabel">Como citar</span><p>MATIAS, J. P. M. <em>Defesa e qualificação: como se preparar.</em> MirandasTech, v1.0, set. 2026. CC BY 4.0.</p><span class="src">Este manual: <a href="https://defesa.mirandastech.com.br/">defesa.mirandastech.com.br</a> (PDF em <a href="https://defesa.mirandastech.com.br/manual.pdf">/manual.pdf</a>). Manuais irmãos: <a href="https://cienciaaberta.mirandastech.com.br/">cienciaaberta.mirandastech.com.br</a> · <a href="https://bibliometria.mirandastech.com.br/">bibliometria.mirandastech.com.br</a> · <a href="https://dados.mirandastech.com.br/">dados.mirandastech.com.br</a> · <a href="https://git.mirandastech.com.br/">git.mirandastech.com.br</a> · <a href="https://latex.mirandastech.com.br/">latex.mirandastech.com.br</a> · <a href="https://busca.mirandastech.com.br/">busca.mirandastech.com.br</a> · <a href="https://prisma.mirandastech.com.br/">prisma.mirandastech.com.br</a> · <a href="https://zotero.mirandastech.com.br/">zotero.mirandastech.com.br</a> · <a href="https://metodologia.mirandastech.com.br/">metodologia.mirandastech.com.br</a> · <a href="https://notebook.mirandastech.com.br/">notebook.mirandastech.com.br</a> · <a href="https://manual.mirandastech.com.br/">manual.mirandastech.com.br</a> · <a href="https://plugin.mirandastech.com.br/">plugin.mirandastech.com.br</a> · hub: <a href="https://www.mirandastech.com.br/pesquisa">mirandastech.com.br/pesquisa</a></span></div>
+        <div class="rule-box"><span class="blabel">Licença</span><p>Conteúdo, capturas e os scripts <code>apresentacao_defesa.py</code>, <code>ensaio_defesa.py</code> e <code>checklist_defesa.py</code>: CC BY 4.0 — use, copie, adapte e redistribua com atribuição. O Beamer é distribuído sob LPPL 1.3c, GPL v2+ e FDL. CAPES, MEC/CNE, IBICT, as universidades citadas (UFC, UFSC, UFSM, UENF, UFES), CTAN/Beamer, Overleaf, The Document Foundation, Google, Vitae e demais órgãos, projetos e serviços citados são marcas, órgãos e projetos de terceiros, sem vínculo nem endosso deste manual.</p></div>
+      </div>
+      <div>
+        <div class="note"><span class="blabel">Declaração de uso de IA</span><p>Este manual foi escrito com assistência de IA (Claude, Anthropic) na estruturação, na redação, na automação das capturas de tela e na execução dos scripts, sob as regras do manual de Uso de IA na pesquisa científica. Todos os fatos — artigos da resolução, tempos, composições de banca, prazos, versões e referências — foram conferidos em 09/09/2026 em páginas públicas. Nenhuma captura foi feita com login; nenhuma sessão de defesa foi gravada ou reproduzida; a demonstração usou pasta e autora fictícias e tempos de ensaio simulados, ditos como tal. Os regimentos citados são exemplos da variedade, e o do programa do leitor prevalece. Decisões de conteúdo, seleção das fontes e responsabilidade pelo texto são do autor.</p></div>
+        <div class="colophon" style="margin-top:12px;font-size:11px">Sem garantia: regimentos, páginas, versões e contadores mudam; cada fato traz a data em que foi verificado. Quando o seu regimento divergir, vale o regimento — e, em dúvida, a resposta escrita da secretaria do programa. Preparar-se como este manual propõe não garante aprovação: a banca pergunta o que quiser e decide como o regimento manda. O tempo da sua apresentação, a composição da sua banca, os prazos da sua versão final e a declaração de uso de IA da sua pesquisa são seus e seguem o seu programa, o seu orientador e a biblioteca da sua instituição.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script>
+
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var tot = slides.length; document.getElementById('tot').textContent = tot; var ns = document.getElementById('nslides'); if (ns) ns.textContent = tot;
+  var cur = document.getElementById('cur'), prog = document.getElementById('prog');
+  var menu = document.getElementById('menu'), scrim = document.getElementById('scrim'), menubtn = document.getElementById('menubtn');
+
+  /* sumário gerado a partir dos slides */
+  var html = '', grp = '';
+  slides.forEach(function(s, i){
+    var t = s.getAttribute('data-title') || ('Slide ' + (i+1));
+    if (s.classList.contains('divider')) { html += '<div class="grp">' + t + '</div>'; return; }
+    if (s.classList.contains('cover')) { html += '<div class="grp">Início</div>'; }
+    html += '<a href="#' + s.id + '" data-i="' + i + '"><span class="n">' + String(i+1).padStart(2,'0') + '</span><span>' + t + '</span></a>';
+  });
+  document.getElementById('menulist').innerHTML = html;
+  document.getElementById('menuclose').addEventListener('click', function(){ toggleMenu(false); });
+  var links = Array.prototype.slice.call(menu.querySelectorAll('a'));
+  function toggleMenu(open){ menu.classList.toggle('open', open); scrim.classList.toggle('on', open); }
+  menubtn.addEventListener('click', function(){ toggleMenu(!menu.classList.contains('open')); });
+  scrim.addEventListener('click', function(){ toggleMenu(false); });
+  links.forEach(function(a){ a.addEventListener('click', function(){ toggleMenu(false); }); });
+
+  /* slide ativo: contador, progresso, revelação, sumário */
+  var active = 0;
+  function setActive(i){
+    active = i; cur.textContent = i + 1; prog.style.width = ((i+1)/tot*100) + '%';
+    links.forEach(function(a){ a.classList.toggle('on', +a.getAttribute('data-i') === i); });
+    var on = menu.querySelector('a.on'); if (on && menu.classList.contains('open')) on.scrollIntoView({block:'nearest'});
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    slides.forEach(function(s){ io.observe(s); });
+  } else { slides.forEach(function(s){ s.classList.add('in'); }); }
+  /* slide ativo = o que ocupa mais área visível */
+  var ticking = false;
+  function recompute(){
+    ticking = false; var vh = window.innerHeight, best = 0, bi = active;
+    slides.forEach(function(s, i){ var r = s.getBoundingClientRect(); var vis = Math.min(r.bottom, vh) - Math.max(r.top, 0); if (vis > best) { best = vis; bi = i; } });
+    if (bi !== active) setActive(bi);
+  }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(recompute); } }, { passive: true });
+  window.addEventListener('resize', recompute); recompute(); slides[0].classList.add('in');
+
+  /* ajuste de escala: cada slide cabe na tela (como num programa de apresentação) */
+  function fitAll(){
+    if (window.innerWidth <= 900) { slides.forEach(function(s){ var i = s.querySelector('.inner'); if (i) i.style.zoom = ''; s.classList.add('fit'); }); return; }
+    var avail = window.innerHeight - 52;
+    slides.forEach(function(s){
+      var inner = s.querySelector('.inner'); if (!inner || s.classList.contains('divider') || s.classList.contains('cover')) return;
+      inner.style.zoom = '1'; s.classList.remove('fit');
+      var need = inner.scrollHeight; if (need <= avail) { s.classList.add('fit'); return; }
+      var z = Math.max(0.75, avail / need); inner.style.zoom = z.toFixed(3);
+      if (inner.scrollHeight * z <= avail + 2) s.classList.add('fit');
+    });
+  }
+  window.addEventListener('resize', fitAll); window.addEventListener('load', fitAll); fitAll();
+  /* cards expansíveis abrem em janela sobreposta, sem mudar a altura do slide */
+  var modal = document.getElementById('modal'), mbody = document.getElementById('modal-body'), mtitle = document.getElementById('modal-title');
+  function closeModal(){ modal.classList.remove('on'); mbody.innerHTML = ''; }
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(ev){ if (ev.target === modal) closeModal(); });
+  document.querySelectorAll('details.more').forEach(function(d){
+    var s = d.querySelector('summary'), body = d.querySelector(':scope > div');
+    s.addEventListener('click', function(ev){
+      if (window.matchMedia('print').matches) return;
+      ev.preventDefault(); d.open = false;
+      mtitle.textContent = s.textContent.replace(/^detalhes\s*—\s*/i, '').trim() || 'detalhes';
+      mbody.innerHTML = body.innerHTML; modal.classList.add('on'); attachCopy(mbody);
+    });
+  });
+  /* botão de copiar em código, terminal e prompt */
+  function attachCopy(root){
+    root.querySelectorAll('.code, .term').forEach(function(box){
+      if (box.querySelector(':scope > .copy')) return;
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'copy'; b.textContent = 'copiar'; b.setAttribute('aria-label', 'Copiar conteúdo');
+      b.addEventListener('click', function(){
+        var pre = box.querySelector('pre'); var txt = pre ? pre.innerText : box.innerText;
+        function done(){ b.textContent = 'copiado ✓'; b.classList.add('ok'); setTimeout(function(){ b.textContent = 'copiar'; b.classList.remove('ok'); }, 1600); }
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, function(){ fallback(txt); done(); }); } else { fallback(txt); done(); }
+      });
+      box.appendChild(b);
+    });
+  }
+  function fallback(txt){ var ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} document.body.removeChild(ta); }
+  attachCopy(document);
+  /* popover do glossário */
+  var gpop = document.getElementById('gpop'), gcur = null;
+  function showPop(el){ gpop.innerHTML = '<b>' + el.getAttribute('data-t') + '</b>' + el.getAttribute('data-d'); gpop.classList.add('on');
+    var r = el.getBoundingClientRect(), pw = Math.min(340, window.innerWidth - 24); gpop.style.maxWidth = pw + 'px';
+    var left = Math.max(12, Math.min(r.left, window.innerWidth - pw - 12)); gpop.style.left = left + 'px';
+    var ph = gpop.offsetHeight; var top = r.bottom + 8; if (top + ph > window.innerHeight - 8) top = Math.max(8, r.top - ph - 8); gpop.style.top = top + 'px'; gcur = el; }
+  function hidePop(){ gpop.classList.remove('on'); gcur = null; }
+  document.querySelectorAll('.gterm').forEach(function(el){
+    el.addEventListener('mouseenter', function(){ showPop(el); }); el.addEventListener('mouseleave', hidePop);
+    el.addEventListener('focus', function(){ showPop(el); }); el.addEventListener('blur', hidePop);
+    el.addEventListener('click', function(ev){ ev.stopPropagation(); if (gcur === el) hidePop(); else showPop(el); });
+  });
+  document.addEventListener('click', function(){ if (gcur) hidePop(); }); window.addEventListener('scroll', function(){ if (gcur) hidePop(); }, { passive: true });
+
+  function go(i){ i = Math.max(0, Math.min(tot-1, i)); window.scrollTo({ top: slides[i].offsetTop, behavior: 'smooth' }); }
+  document.getElementById('prev').addEventListener('click', function(){ go(active-1); });
+  document.getElementById('next').addEventListener('click', function(){ go(active+1); });
+  document.addEventListener('keydown', function(ev){
+    if (ev.target && /input|textarea|select/i.test(ev.target.tagName)) return;
+    if (ev.key === 'ArrowDown' || ev.key === 'PageDown' || ev.key === ' ' || ev.key === 'ArrowRight') { ev.preventDefault(); go(active+1); }
+    else if (ev.key === 'ArrowUp' || ev.key === 'PageUp' || ev.key === 'ArrowLeft') { ev.preventDefault(); go(active-1); }
+    else if (ev.key === 'Home') { go(0); } else if (ev.key === 'End') { go(tot-1); }
+    else if (ev.key === 'Escape') { toggleMenu(false); closeModal(); }
+  });
+
+  /* checklist — conveniência por leitor, só neste navegador */
+  var KEY = 'mirandastech-defesa-checklist-v1';
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#checklist input[type=checkbox]'));
+  var status = document.getElementById('check-status');
+  function load(){ try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){ return {}; } }
+  function save(st){ try { localStorage.setItem(KEY, JSON.stringify(st)); } catch(e){} }
+  function paint(){ var n = 0; boxes.forEach(function(b){ var it = b.closest('.check-item'); if (b.checked) { n++; it.classList.add('done'); } else { it.classList.remove('done'); } }); if (status) status.textContent = n + ' de ' + boxes.length; }
+  var st = load(); boxes.forEach(function(b){ b.checked = !!st[b.id]; b.addEventListener('change', function(){ var s = load(); s[b.id] = b.checked; save(s); paint(); }); }); paint();
+  var reset = document.getElementById('check-reset'); if (reset) reset.addEventListener('click', function(){ boxes.forEach(function(b){ b.checked = false; }); save({}); paint(); });
+})();
+</script>
+<script>
+(function(){
+  var lb = document.createElement('div'); lb.className = 'lightbox'; lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true');
+  lb.innerHTML = '<span class="lb-hint">clique fora ou Esc para fechar</span><button type="button" class="lb-close" aria-label="Fechar">×</button><figure style="margin:0;display:contents"><img alt=""><figcaption hidden></figcaption></figure>';
+  document.body.appendChild(lb);
+  var img = lb.querySelector('img'), cap = lb.querySelector('figcaption');
+  function open(src, alt, text){ img.src = src; img.alt = alt || ''; if (text) { cap.textContent = text; cap.hidden = false; } else { cap.hidden = true; } lb.classList.add('on'); document.body.style.overflow = 'hidden'; }
+  function close(){ lb.classList.remove('on'); img.removeAttribute('src'); document.body.style.overflow = ''; }
+  document.addEventListener('click', function(ev){
+    var t = ev.target;
+    if (t.tagName === 'IMG' && t.closest('.shot')) {
+      var fig = t.closest('figure'), fc = fig && fig.querySelector('figcaption');
+      open(t.currentSrc || t.src, t.alt, fc ? fc.textContent.replace(/\s+/g,' ').trim() : '');
+    }
+  });
+  lb.addEventListener('click', function(ev){ if (ev.target !== img) close(); });
+  document.addEventListener('keydown', function(ev){ if (ev.key === 'Escape' && lb.classList.contains('on')) close(); });
+})();
+</script>
+
+</body>
+</html>
